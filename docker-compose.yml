@@ -1,0 +1,40 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:latest
+    networks:
+      - backend-network
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+    volumes:
+      - ./connect-and-insert.js:/docker-entrypoint-initdb.d/connect-and-insert.js
+
+  fastapi-app:
+    build:
+      context: .
+    networks:
+      - backend-network
+    ports:
+      - "80:80"
+    depends_on:
+      - mongodb
+    environment:
+      HOST_NAME: "mongodb:27017"
+      MONGODB_USER_LOGIN_WRITE: ${MONGODB_USER_LOGIN_WRITE}
+      MONGODB_PASSWORD_LOGIN_WRITE: ${MONGODB_PASSWORD_LOGIN_WRITE}
+      MONGODB_USER_COMMANDS_WRITE: ${MONGODB_USER_COMMANDS_WRITE}
+      MONGODB_PASSWORD_COMMANDS_WRITE: ${MONGODB_PASSWORD_COMMANDS_WRITE}
+      MONGODB_USER_RESULTS_WRITE: ${MONGODB_USER_RESULTS_WRITE}
+      MONGODB_PASSWORD_RESULTS_WRITE: ${MONGODB_PASSWORD_RESULTS_WRITE}
+      TOKEN_ISSUER: ${TOKEN_ISSUER}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+    volumes:
+      - ./app:/app
+
+networks:
+  backend-network:
+    driver: bridge
+
