@@ -1,0 +1,1883 @@
+[
+    {
+        "chapter": "1.1.1.1",
+        "description": "Ensure mounting of cramfs filesystems is disabled:",
+        "command": "modprobe -n -v cramfs | grep -E '(cramfs|install)'; lsmod | grep cramfs",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgY3JhbWZzKQptb2RjbWQ9JChtb2Rwcm9iZSAtbiAtdiBjcmFtZnMgMj4mMSB8IGdyZXAgLUUgJyhjcmFtZnN8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiY3JhbWZzIGlzIGRlYWN0aXZhdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxpZiBlY2hvICRtb2RjbWQgfCBncmVwICJNb2R1bGUgY3JhbWZzIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiU2VlbXMgbGlrZSBjcmFtZnMgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJDcmFtZnMgc2VlbXMgdG8gYmUgZW5hYmxlZCIKICAgICAgICBleGl0IDEKICAgIGZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.2",
+        "description": "Ensure mouinting of freevxfs is disabled:",
+        "command": "modprobe -n -v freevxfs | grep -E '(freevxfs|install)'; lsmod | grep freevxfs",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgZnJlZXZ4ZnMpCm1vZGNtZD0kKG1vZHByb2JlIC1uIC12IGZyZWV2eGZzIDI+JjEgfCBncmVwIC1FICcoZnJlZXZ4ZnN8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiZnJlZXZ4ZnMgaXMgZGVhY3RpdmF0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSBmcmVldnhmcyBub3QgZm91bmQiICYmIFsgLXogIiRsc2NtZCIgXTsgdGhlbgogICAgICAgIGVjaG8gIlNlZW1zIGxpa2UgZnJlZXZ4ZnMgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJmcmVldnhmcyBzZWVtcyB0byBiZSBlbmFibGVkIgogICAgICAgIGV4aXQgMQogICAgZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.3",
+        "description": "Ensure mounting of jffs2 filesystems is disabled:",
+        "command": "modprobe -n -v jffs2 | grep -E '(jffs2|install)'; lsmod | grep jffs2",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgamZmczIpCm1vZGNtZD0kKG1vZHByb2JlIC1uIC12IGpmZnMyIDI+JjEgfCBncmVwIC1FICcoamZmczJ8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiamZmczIgaXMgZGVhY3RpdmF0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSBqZmZzMiBub3QgZm91bmQiICYmIFsgLXogIiRsc2NtZCIgXTsgdGhlbgogICAgICAgIGVjaG8gIlNlZW1zIGxpa2UgamZmczIgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJqZmZzMiBzZWVtcyB0byBiZSBlbmFibGVkIgogICAgICAgIGV4aXQgMQogICAgZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.4",
+        "description": "Ensure mounting of hfs filesystems is disabled:",
+        "command": "modprobe -n -v hfs | grep -E '(hfs|install)'; lsmod | grep hfs",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgaGZzKQptb2RjbWQ9JChtb2Rwcm9iZSAtbiAtdiBoZnMgMj4mMSB8IGdyZXAgLUUgJyhoZnN8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiaGZzIGlzIGRlYWN0aXZhdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxpZiBlY2hvICRtb2RjbWQgfCBncmVwICJNb2R1bGUgaGZzIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiU2VlbXMgbGlrZSBoZnMgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJoZnMgc2VlbXMgdG8gYmUgZW5hYmxlZCIKICAgICAgICBleGl0IDEKICAgIGZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.5",
+        "description": "Ensure mounting of hfsplus filesystems is disabled:",
+        "command": "modprobe -n -v hfsplus | grep -E '(hfsplus|install)'; lsmod | grep hfsplus",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgaGZzcGx1cykKbW9kY21kPSQobW9kcHJvYmUgLW4gLXYgaGZzcGx1cyAyPiYxIHwgZ3JlcCAtRSAnKGhmc3BsdXN8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiaGZzcGx1cyBpcyBkZWFjdGl2YXRlZCIKICAgICAgICBleGl0IDAKICAgIGVsaWYgZWNobyAkbW9kY21kIHwgZ3JlcCAiTW9kdWxlIGhmc3BsdXMgbm90IGZvdW5kIiAmJiBbIC16ICIkbHNjbWQiIF07IHRoZW4KICAgICAgICBlY2hvICJTZWVtcyBsaWtlIGhmc3BsdXMgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJoZnNwbHVzIHNlZW1zIHRvIGJlIGVuYWJsZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.6",
+        "description": "Ensure mounting of udf filesystems is disabled:",
+        "command": "modprobe -n -v udf | grep -E '(udf|install)'",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgdWRmKQptb2RjbWQ9JChtb2Rwcm9iZSAtbiAtdiB1ZGYgMj4mMSB8IGdyZXAgLUUgJyh1ZGZ8aW5zdGFsbCknKSB8fCB0cnVlCiAgICBpZiBlY2hvICRtb2RjbWQgfCBncmVwICJpbnN0YWxsIC9iaW4vdHJ1ZSIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAidWRmIGlzIGRlYWN0aXZhdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxpZiBlY2hvICRtb2RjbWQgfCBncmVwICJNb2R1bGUgdWRmIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICAgICAgZWNobyAiU2VlbXMgbGlrZSB1ZGYgaXMgbm90IGluc3RhbGxlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJ1ZGYgc2VlbXMgdG8gYmUgZW5hYmxlZCIKICAgICAgICBleGl0IDEKICAgIGZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.1.7",
+        "description": "Ensure mounting of FAT filesystems is limited",
+        "command": "lsmod | grep vfat; lsmod | grep udf",
+        "script": "b3V0cHV0MT0kKGxzbW9kIHwgZ3JlcCB2ZmF0KQoKZWNobyAiJG91dHB1dDEiCgppZiBbWyAteiAiJG91dHB1dDEiIF1dOyB0aGVuCiAgICBlY2hvICJUaGUgbW91dGluZyBvZiBGQVQgZmlsZXN5c3RlbXMgaXMgbGltaXRlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgbW91bnRpbmcgb2YgRkFUIGZpbGVzeXN0ZW1zIGlzIGxpbWl0ZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.2",
+        "description": "Ensure /tmp is configured",
+        "command": "systemctl is-enabled tmp.mount",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3RtcFxzJykKZ3JlcE1vdW50PSQoZ3JlcCAtRSAnXHMvdG1wXHMnIC9ldGMvZnN0YWIgfCBncmVwIC1FIC12ICdeXHMqIycpCnN5c2N0bE1vdW50PSQoc3lzdGVtY3RsIGlzLWVuYWJsZWQgdG1wLm1vdW50IHx8IHRydWUpCmVjaG8gIiR2ZXJpZnlNb3VudCIKZWNobyAiJGdyZXBNb3VudCIKZWNobyAiJHN5c2N0bE1vdW50IgoKaWYgWyAtbiAiJHZlcmlmeU1vdW50IiBdICYmIHsgWyAtbiAiJGdyZXBNb3VudCIgXSB8fCBbICIkKGVjaG8gIiRzeXNjdGxNb3VudCIgfCBncmVwIC1FICdlbmFibGVkJykiIF07IH07IHRoZW4KICAgIGVjaG8gInRtcCBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gInRtcCBpcyBub3QgY29uZmlndXJlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.3",
+        "description": "Ensure nodev option is set on /tmp partition:",
+        "command": "mount | grep -E '\\s/tmp\\s' | grep -v nodev",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3RtcFxzJyB8IGdyZXAgLXYgbm9kZXYpCmVjaG8gIiRtb3VudENtZCIKaWYgWyAteiAiJG1vdW50Q21kIiBdOyB0aGVuCiAgICBlY2hvICJOb2Rldi1PcHRpb24gaXMgc2V0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIk5vZGV2LU9wdGlvbiBpcyBub3Qgc2V0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.4",
+        "description": "Ensure nosuid option set on /tmp partition:",
+        "command": "mount | grep -E '\\s/tmp\\s' | grep -v nosuid",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3RtcFxzJyB8IGdyZXAgLXYgbm9zdWlkKQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiTm9zdWlkLU9wdGlvbiBpcyBzZXQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiTm9zdWlkLU9wdGlvbiBpcyBub3Qgc2V0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.5",
+        "description": "Ensure noexec option set on /tmp partition:",
+        "command": "mount | grep -E '\\s/tmp\\s' | grep -v noexec",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3RtcFxzJyB8IGdyZXAgLXYgbm9leGVjKQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiTm9leGVjLU9wdGlvbiBpcyBzZXQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiTm9leGVjLU9wdGlvbiBpcyBub3Qgc2V0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.6",
+        "description": "Ensure /dev/shm is configured:",
+        "command": "mount | grep -E '\\s/dev/shm\\s'; grep -E '\\s/dev/shm\\s' /etc/fstab",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2Rldi9zaG1ccycpCmdyZXBNb3VudD0kKGdyZXAgLUUgJ1xzL2Rldi9zaG1ccycgL2V0Yy9mc3RhYiB8IGdyZXAgLUUgLXYgJ15ccyojJykKZWNobyAiJHZlcmlmeU1vdW50IgplY2hvICIkZ3JlcE1vdW50IgppZiBbIC1uICIkdmVyaWZ5TW91bnQiIF0gJiYgWyAtbiAiJGdyZXBNb3VudCIgXTsgdGhlbgogICAgZWNobyAiL2Rldi9zaG0gaXMgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICIvZGV2L3NobSBpcyBub3QgY29uZmlndXJlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.7",
+        "description": "Ensure nodev option set on /dev/shm partition:",
+        "command": "mount | grep -E '\\s/dev/shm\\s' | grep -v nodev",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2Rldi9zaG1ccycgfCBncmVwIC12IG5vZGV2KQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiTm9kZXYtT3B0aW9uIGlzIHNldCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJOb2Rldi1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.8",
+        "description": "Ensure nosuid option set on /dev/shm partition:",
+        "command": "mount | grep -E '\\s/dev/shm\\s' | grep -v nosuid",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2Rldi9zaG1ccycgfCBncmVwIC12IG5vc3VpZCkKZWNobyAiJG1vdW50Q21kIgppZiBbIC16ICIkbW91bnRDbWQiIF07IHRoZW4KICAgIGVjaG8gIk5vc3VpZC1PcHRpb24gaXMgc2V0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIk5vc3VpZC1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.9",
+        "description": "Ensure noexec option set on /dev/shm partition:",
+        "command": "mount | grep -E '\\s/dev/shm\\s' | grep -v noexec",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2Rldi9zaG1ccycgfCBncmVwIC12IG5vZXhlYykKZWNobyAiJG1vdW50Q21kIgppZiBbIC16ICIkbW91bnRDbWQiIF07IHRoZW4KICAgIGVjaG8gIk5vZXhlYy1PcHRpb24gaXMgc2V0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIk5vZXhlYy1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.10",
+        "description": "Ensure separate partition exists for /var:",
+        "command": "mount | grep -E '\\s/var\\s'",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3ZhclxzJykKZWNobyAiJHZlcmlmeU1vdW50IgppZiBbIC1uICIkdmVyaWZ5TW91bnQiIF07IHRoZW4KICAgIGVjaG8gIi92YXIgaXMgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICIvdmFyIGlzIG5vdCBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.11",
+        "description": "Ensure separate partition exists for /var/tmp:",
+        "command": "mount | grep -E '\\s/var/tmp\\s'",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3Zhci90bXBccycpCmVjaG8gIiR2ZXJpZnlNb3VudCIKaWYgWyAtbiAiJHZlcmlmeU1vdW50IiBdOyB0aGVuCiAgICBlY2hvICIvdmFyL3RtcCBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIi92YXIvdG1wIGlzIG5vdCBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.12",
+        "description": "Ensure nodev option set on /var/tmp partition:",
+        "command": "mount | grep -E '\\s/var/tmp\\s' | grep -v nodev",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3Zhci90bXBccycgfCBncmVwIC12IG5vZGV2KQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiTm9kZXYtT3B0aW9uIGlzIHNldCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJOb2Rldi1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.13",
+        "description": "Ensure nosuid option set on /var/tmp partition:",
+        "command": "mount | grep -E '\\s/var/tmp\\s' | grep -v nosuid",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3Zhci90bXBccycgfCBncmVwIC12IG5vc3VpZCkKZWNobyAiJG1vdW50Q21kIgppZiBbIC16ICIkbW91bnRDbWQiIF07IHRoZW4KICAgIGVjaG8gIk5vc3VpZC1PcHRpb24gaXMgc2V0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIm5vc3VpZC1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.14",
+        "description": "Ensure noexec option set on /var/tmp partition:",
+        "command": "mount | grep -E '\\s/var/tmp\\s' | grep -v noexec",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL3Zhci90bXBccycgfCBncmVwIC12IG5vZXhlYykKZWNobyAiJG1vdW50Q21kIgppZiBbIC16ICIkbW91bnRDbWQiIF07IHRoZW4KICAgIGVjaG8gIk5vZXhlYy1PcHRpb24gaXMgc2V0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIk5vZXhlYy1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.15",
+        "description": "Ensure separate partition exists for /var/log:",
+        "command": "mount | grep -E '\\s/var/log\\s'",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzXC92YXJcL2xvZ1xzJykKZWNobyAiJHZlcmlmeU1vdW50IgppZiBbIC1uICIkdmVyaWZ5TW91bnQiIF07IHRoZW4KICAgIGVjaG8gIi92YXIvbG9nIGlzIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiL3Zhci9sb2cgaXMgbm90IGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.16",
+        "description": "Ensure separate partition exists for /var/log/audit:",
+        "command": "mount | grep -E '\\s/var/log/audit\\s'",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzXC92YXJcL2xvZ1wvYXVkaXRccycpCmVjaG8gIiR2ZXJpZnlNb3VudCIKaWYgWyAtbiAiJHZlcmlmeU1vdW50IiBdOyB0aGVuCiAgICBlY2hvICIvdmFyL2xvZy9hdWRpdCBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIi92YXIvbG9nL2F1ZGl0IGlzIG5vdCBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.17",
+        "description": "Ensure separate partition exists for /home:",
+        "command": "mount | grep -E '\\s/home\\s'",
+        "script": "dmVyaWZ5TW91bnQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2hvbWVccycpCmVjaG8gIiR2ZXJpZnlNb3VudCIKaWYgWyAtbiAiJHZlcmlmeU1vdW50IiBdOyB0aGVuCiAgICBlY2hvICIvaG9tZSBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIi9ob21lIGlzIG5vdCBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.18",
+        "description": "Ensure nodev option set on /home partition:",
+        "command": "mount | grep -E '\\s/home\\s' | grep -v nodev",
+        "script": "bW91bnRDbWQ9JChtb3VudCB8IGdyZXAgLUUgJ1xzL2hvbWVccycgfCBncmVwIC12IG5vZGV2KQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiTm9kZXYtT3B0aW9uIGlzIHNldCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJOb2Rldi1PcHRpb24gaXMgbm90IHNldCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.22",
+        "description": "Ensure sticky bit is set on all world-writable directories:",
+        "command": "df --local -P | awk '{if (NR!=1) print $6}' | xargs -I '{}' find '{}' -xdev -type d \\( -perm -0002 -a ! -perm -1000 \\) 2>/dev/null",
+        "script": "bW91bnRDbWQ9JChkZiAtLWxvY2FsIC1QIHwgYXdrICd7aWYgKE5SIT0xKSBwcmludCAkNn0nIHwgeGFyZ3MgLUkgJ3t9JyBmaW5kICd7fScgLXhkZXYgLXR5cGUgZCBcKCAtcGVybSAtMDAwMiAtYSAhIC1wZXJtIC0xMDAwIFwpIDI+L2Rldi9udWxsKQplY2hvICIkbW91bnRDbWQiCmlmIFsgLXogIiRtb3VudENtZCIgXTsgdGhlbgogICAgZWNobyAiU3RpY2t5IGJpdCBpcyBzZXQgb24gYWxsIHdvcmxkLXdyaXRhYmxlIGRpcmVjdG9yaWVzIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIlN0aWNreSBiaXQgbmVlZHMgdG8gYmUgc2V0IG9uIGFsbCB3b3JsZC13cml0YWJsZSBkaXJlY3RvcmllcyIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.23",
+        "description": "Disable Automounting",
+        "command": "systemctl is-enabled autofs",
+        "script": "aWYgc3lzdGVtY3RsIGlzLWVuYWJsZWQgYXV0b2ZzIHwgZ3JlcCAtcSAiZW5hYmxlZCI7IHRoZW4KICAgIGVjaG8gIlRoZSBzZXJ2aWNlIGF1dG9mcyBpcyBlbmFibGVkLiIKICAgIGV4aXQgMQplbHNlCiAgICBlY2hvICJUaGUgc2VydmljZSBhdXRvZnMgaXMgbm90IGVuYWJsZWQuIgogICAgZXhpdCAwCmZp",
+        "level": [
+            1,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.1.24",
+        "description": "Disable USB Storage",
+        "command": "modprobe -n -v usb-storage; lsmod | grep usb-storage",
+        "script": "b3V0cHV0MT0kKG1vZHByb2JlIC1uIC12IHVzYi1zdG9yYWdlKQpvdXRwdXQyPSQobHNtb2QgfCBncmVwIHVzYi1zdG9yYWdlKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgoKaWYgIGVjaG8gIiRvdXRwdXQxInxncmVwIC1xICJpbnN0YWxsXHMqL2Jpbi90cnVlIiAmJiBbWyAteiAiJG91dHB1dDIiIF1dOyB0aGVuCiAgICBlY2hvICJVU0IgU3RvcmFnZSBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJEaXNhYmxlIFVTQiBTdG9yYWdlIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.2.1",
+        "description": "Ensure package manager repositories are configured:",
+        "command": "apt-cache policy",
+        "script": "Y29tbWFuZD0kKGFwdC1jYWNoZSBwb2xpY3kpCmVjaG8gIiRjb21tYW5kIgplY2hvICJFbnN1cmUgcGFja2FnZSBtYW5hZ2VyIHJlcG9zaXRvcmllcyBhcmUgY29uZmlndXJlZCIKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.2.2",
+        "description": "Ensure GPG keys are configured",
+        "command": "apt-key list",
+        "script": "Y29tbWFuZD0kKGFwdC1rZXkgbGlzdCkKZWNobyAiJGNvbW1hbmQiCmVjaG8gIkVuc3VyZSBHUEcga2V5cyBhcmUgY29uZmlndXJlZCIKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.3.1",
+        "description": "Ensure sudo is installed",
+        "command": "dpkg -s sudo",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBzdWRvKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgImluc3RhbGwgb2sgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAiU3VkbyBpcyBpbnN0YWxsZWQuIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIlN1ZG8gbmVlZHMgdG8gYmUgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.3.2",
+        "description": "Ensure sudo commands use pty",
+        "command": "sudo grep -Ei '^\\s*Defaults\\s+([^#]+,\\s*)?use_pty(,\\s+\\S+\\s*)*(\\s+#.*)?$' /etc/sudoers /etc/sudoers.d/*",
+        "script": "b3V0cHV0PSQoc3VkbyBncmVwIC1FaSAnXlxzKkRlZmF1bHRzXHMrKFteI10rLFxzKik/dXNlX3B0eSgsXHMrXFMrXHMqKSooXHMrIy4qKT8kJyAvZXRjL3N1ZG9lcnMgL2V0Yy9zdWRvZXJzLmQvKikKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJ1c2VfcHR5IjsgdGhlbgogICAgZWNobyAiU3VkbyBjb21tYW5kcyB1c2UgcHR5LiIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJTdWRvIGNvbW1hbmRzIG5lZWQgdG8gdXNlIHB0eS4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.3.3",
+        "description": "Ensure sudo log file exists",
+        "command": "sudo grep -Ei '^\\s*Defaults\\s+logfile=\\S+' /etc/sudoers /etc/sudoers.d/*",
+        "script": "b3V0cHV0PSQoc3VkbyBncmVwIC1FaSAnXlxzKkRlZmF1bHRzXHMrbG9nZmlsZT1cUysnIC9ldGMvc3Vkb2VycyAvZXRjL3N1ZG9lcnMuZC8qKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgImxvZ2ZpbGUiOyB0aGVuCiAgICBlY2hvICJTdWRvIGxvZyBmaWxlIGV4aXN0cy4iCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHN1ZG8gbG9nIGZpbGUgZXhpc3RzLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.4.1",
+        "description": "Ensure AIDE is installed",
+        "command": "sudo dpkg -s aide-common | grep 'Status: install ok installed'",
+        "script": "b3V0cHV0PSQoc3VkbyBkcGtnIC1zIGFpZGUtY29tbW9uKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgJ1N0YXR1czogaW5zdGFsbCBvayBpbnN0YWxsZWQnOyB0aGVuCiAgICBlY2hvICJBSURFIGlzIGluc3RhbGxlZC4iCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIEFJREUgaXMgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.4.2",
+        "description": "Ensure filesystem integrity is regularly checked",
+        "command": "find /etc/cron.* /etc/crontab -name 'aide' -type f",
+        "script": "b3V0cHV0PSQoZmluZCAvZXRjL2Nyb24uKiAvZXRjL2Nyb250YWIgLW5hbWUgJ2FpZGUnIC10eXBlIGYpCmVjaG8gIiRvdXRwdXQiCmlmIFsgLW4gIiRvdXRwdXQiIF07IHRoZW4KICAgIGVjaG8gIkZpbGVzeXN0ZW0gaW50ZWdyaXR5IGlzIHJlZ3VsYXJseSBjaGVja2VkIHdpdGggYWlkZS4iCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiQ3JlYXRlIGNyb25qb2IgdG8gY2hlY2sgZmlsZXN5c3RlbSBpbnRlZ3JpdHkgd2l0aCBhaWRlLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.5.2",
+        "description": "Ensure permissions on bootloader config are configured",
+        "command": "stat /boot/grub/grub.cfg",
+        "script": "b3V0cHV0PSQoc3RhdCAvYm9vdC9ncnViL2dydWIuY2ZnKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgIkFjY2VzczogKDA0MDAvLXItLS0tLS0tLSkgIFVpZDogKCAgICAwLyAgICByb290KSAgIEdpZDogKCAgICAwLyAgICByb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIGJvb3Rsb2FkZXIgY29uZmlnIGFyZSBjb25maWd1cmVkLiIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJDaGFuZ2UgcGVybWlzc2lvbnMgb24gYm9vdGxvYWRlciBjb25maWcuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.6.1",
+        "description": "Ensure XD/NX support is enabled",
+        "command": "journalctl | grep 'protection: active'",
+        "script": "b3V0cHV0MT0kKHN1ZG8gam91cm5hbGN0bCB8IGdyZXAgJ3Byb3RlY3Rpb246IGFjdGl2ZScpCgplY2hvICIkb3V0cHV0MSIKCmlmICBlY2hvICIkb3V0cHV0MSJ8Z3JlcCAtcSAia2VybmVsOlxzKk5YXHMqKEV4ZWN1dGUgRGlzYWJsZSlccypwcm90ZWN0aW9uOlxzKmFjdGl2ZSI7IHRoZW4KICAgIGVjaG8gIlhEL05YIHN1cHBvcnQgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgWEQvTlggc3VwcG9ydCBpcyBlbmFibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.6.2",
+        "description": "Ensure address space layout randomization (ASLR) is enabled:",
+        "command": "sysctl kernel.randomize_va_space; grep \"kernel\\.randomize_va_space\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "c3lzQ21kPSQoc3lzY3RsIGtlcm5lbC5yYW5kb21pemVfdmFfc3BhY2UpCmdyZXBDbWQ9JChncmVwICJrZXJuZWxcLnJhbmRvbWl6ZV92YV9zcGFjZSIgL2V0Yy9zeXNjdGwuY29uZiAvZXRjL3N5c2N0bC5kLyopCmVjaG8gIiRzeXNDbWQiCmVjaG8gIiRncmVwQ21kIgppZiBlY2hvICIkc3lzQ21kIiB8IGdyZXAgLXEgImtlcm5lbC5yYW5kb21pemVfdmFfc3BhY2UgPSAyIiB8fCBlY2hvICIkZ3JlcENtZCIgfCBncmVwIC1xICJrZXJuZWwucmFuZG9taXplX3ZhX3NwYWNlID0gMiI7IHRoZW4KICAgIGVjaG8gIkFTTFIgaXMgZW5hYmxlZC4iCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiTWFrZSBzdXJlIHRvIGVuYWJsZSBBU0xSLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.6.3",
+        "description": "Verify prelink is not installed",
+        "command": "dpkg -s prelink",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBwcmVsaW5rIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAncHJlbGluaycgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gIlByZWxpbmsgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3ByZWxpbmsnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.6.4",
+        "description": "Ensure core dumps are restricted",
+        "command": "grep -E '^(\\*|\\s).*hard.*core.*(\\s+#.*)?$' /etc/security/limits.conf /etc/security/limits.d/*; sysctl fs.suid_dumpable; grep \"fs.suid_dumpable\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "Z3JlcFNlYz0kKGdyZXAgLUUgJ14oXCp8XHMpLipoYXJkLipjb3JlLiooXHMrIy4qKT8kJyAvZXRjL3NlY3VyaXR5L2xpbWl0cy5jb25mIC9ldGMvc2VjdXJpdHkvbGltaXRzLmQvKiAyPiYxKQpzeXNjdGxDbWQ9JChzeXNjdGwgZnMuc3VpZF9kdW1wYWJsZSkKZ3JlcFN5cz0kKGdyZXAgImZzLnN1aWRfZHVtcGFibGUiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qIDI+JjEpCmVjaG8gIiRncmVwU2VjIgplY2hvICIkc3lzY3RsQ21kIgplY2hvICIkZ3JlcFN5cyIKaWYgZWNobyAiJGdyZXBTZWMiIHwgZ3JlcCAtcSAiKiBoYXJkIGNvcmUgMCIgJiYgeyBlY2hvICIkc3lzY3RsQ21kIiB8IGdyZXAgLXEgImZzLnN1aWRfZHVtcGFibGUgPSAwIiB8fCBlY2hvICIkZ3JlcFN5cyIgfCBncmVwIC1xICJmcy5zdWlkX2R1bXBhYmxlID0gMCI7IH0gOyB0aGVuCiAgICBlY2hvICJDb3JlIGR1bXBzIGFyZSByZXN0cmljdGVkLiIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJDb3JlIGR1bXBzIG5lZWQgdG8gYmUgcmVzdHJpY3RlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.7.1.1",
+        "description": "Verify AppArmor is installed",
+        "command": "dpkg -s apparmor",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBhcHBhcm1vciAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgImluc3RhbGwgb2sgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAiQXBwYXJtb3IgaXMgaW5zdGFsbGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSB0aGUgcGFja2FnZSAnQXBwYXJtb3InIGlzIGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmkK",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.7.1.3",
+        "description": "Ensure all AppArmor Profiles are in enforce or complain mode",
+        "command": "apparmor_status | grep profiles",
+        "script": "b3V0cHV0PSQoc3VkbyBhcHBhcm1vcl9zdGF0dXMgfCBncmVwIHByb2ZpbGVzKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgIjAgcHJvZmlsZXMgYXJlIGluIGtpbGwgbW9kZSIgJiYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICIwIHByb2ZpbGVzIGFyZSBpbiB1bmNvbmZpbmVkIG1vZGUiOyB0aGVuCiAgICBlY2hvICJBcHBBcm1vciBwcm9maWxlcyBhcmUgbG9hZGVkIGNvcnJlY3RseSIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgQXBwQXJtb3IgcHJvZmlsZXMgYXJlIGxvYWRlZCBpbiBlaXRoZXIgZW5mb3JjZSBvciBjb21wbGFpbiBtb2RlLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.7.1.4",
+        "description": "Ensure all AppArmor Profiles are enforcing",
+        "command": "apparmor_status",
+        "script": "b3V0cHV0MT0kKHN1ZG8gYXBwYXJtb3Jfc3RhdHVzIHwgZ3JlcCBwcm9maWxlcykKb3V0cHV0Mj0kKHN1ZG8gYXBwYXJtb3Jfc3RhdHVzIHwgZ3JlcCBwcm9jZXNzZXMpCgplY2hvICIkb3V0cHV0MSIKZWNobyAiJG91dHB1dDIiCgppZiAgZWNobyAiJG91dHB1dDEifCBncmVwIC1xICIwXHMqcHJvZmlsZXNccyphcmVccyppblxzKmNvbXBsYWluXHMqbW9kZS4iICYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgIjBccypwcm9jZXNzZXNccyphcmVccyppblxzKmNvbXBsYWluXHMqbW9kZS4iOyB0aGVuCiAgICBlY2hvICJBbGwgQXBwQXJtb3IgUHJvZmlsZXMgYXJlIGVuZm9yY2luZyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgYWxsIEFwcEFybW9yIFByb2ZpbGVzIGFyZSBlbmZvcmNpbmciCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.8.1.4",
+        "description": "Ensure permissions on /etc/motd are configured",
+        "command": "stat /etc/motd",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9tb3RkIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgLWUgIkFjY2VzczpccyooMDY0NC8tcnctci0tci0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSIgLWUiLipOb1xzKnN1Y2hccypmaWxlXHMqb3JccypkaXJlY3RvcnkiID4vZGV2L251bGw7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvbW90ZCBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9tb3RkIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.8.1.5",
+        "description": "Ensure permissions on /etc/issue are configured",
+        "command": "stat /etc/issue",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9pc3N1ZSAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xIC1lICJBY2Nlc3M6XHMqKDA2NDQvLXJ3LXItLXItLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiIC1lICIuKk5vXHMqc3VjaFxzKmZpbGVccypvclxzKmRpcmVjdG9yeSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvaXNzdWUgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvaXNzdWUgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.8.1.6",
+        "description": "Ensure permissions on /etc/issue.net are configured",
+        "command": "stat /etc/issue.net",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9pc3N1ZS5uZXQgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAtZSAiQWNjZXNzOlxzKigwNjQ0Ly1ydy1yLS1yLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIiAtZSAiLipOb1xzKnN1Y2hccypmaWxlXHMqb3JccypkaXJlY3RvcnkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2lzc3VlLm5ldCBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9pc3N1ZS5uZXQgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "1.9",
+        "description": "Verify there are no updates or patches to install",
+        "command": "apt -s upgrade",
+        "script": "b3V0cHV0PSQoYXB0IC1zIHVwZ3JhZGUpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAiMCB1cGdyYWRlZCwgMCBuZXdseSBpbnN0YWxsZWQsIDAgdG8gcmVtb3ZlIGFuZCAwIG5vdCB1cGdyYWRlZC4iOyB0aGVuCiAgICBlY2hvICJObyB1cGRhdGVzIGZvdW5kIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIlBsZWFzZSB2ZXJpZnkgdGhlcmUgYXJlIG5vIHVwZGF0ZXMgb3IgcGF0Y2hlcyB0byBpbnN0YWxsIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.1.1",
+        "description": "Ensure xinetd is not installed",
+        "command": "dpkg -s xinetd",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyB4aW5ldGQgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICd4aW5ldGQnIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJ4aW5ldGQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3hpbmV0ZCcgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.1.2",
+        "description": "Ensure openbsd-inetd is not installed",
+        "command": "dpkg -s openbsd-inetd",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBvcGVuYnNkLWluZXRkIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAnb3BlbmJzZC1pbmV0ZCcgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gIm9wZW5ic2QtaW5ldGQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ29wZW5ic2QtaW5ldGQnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.1.1",
+        "description": "Ensure time synchronization is in use",
+        "command": "systemctl is-enabled systemd-timesyncd; dpkg -s chrony; dpkg -s ntp",
+        "script": "b3V0cHV0MT0kKHN5c3RlbWN0bCBpcy1lbmFibGVkIHN5c3RlbWQtdGltZXN5bmNkIDI+JjEpCm91dHB1dDI9JChkcGtnIC1zIGNocm9ueSAyPiYxKQpvdXRwdXQzPSQoZHBrZyAtcyBudHAgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgplY2hvICIkb3V0cHV0MiIKZWNobyAiJG91dHB1dDMiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJtYXNrZWQiIHx8IGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIlN0YXR1czogaW5zdGFsbCBvayBpbnN0YWxsZWQiIHx8IGVjaG8gIiRvdXRwdXQzIiB8IGdyZXAgLXEgIlN0YXR1czogaW5zdGFsbCBvayBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJUaW1lIHN5bmNocm9uaXphdGlvbiBpcyBpbiB1c2UiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHRpbWUgc3luY2hyb25pemF0aW9uIGlzIGluIHVzZSIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.3",
+        "description": "Ensure Avahi Server is not installed",
+        "command": "dpkg -s avahi-daemon",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBhdmFoaS1kYWVtb24gMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICdhdmFoaS1kYWVtb24nIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJhdmFoaS1kYWVtb24gaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2F2YWhpLWRhZW1vbicgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.4",
+        "description": "Ensure CUPS is not installed",
+        "command": "dpkg -s cups",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBjdXBzIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAnY3VwcycgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gImN1cHMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2N1cHMnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.5",
+        "description": "Ensure DHCP Server is not installed",
+        "command": "dpkg -s isc-dhcp-server",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBpc2MtZGhjcC1zZXJ2ZXIgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICdpc2MtZGhjcC1zZXJ2ZXInIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJpc2MtZGhjcC1zZXJ2ZXIgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2lzYy1kaGNwLXNlcnZlcicgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.6",
+        "description": "Ensure LDAP server is not installed",
+        "command": "dpkg -s slapd",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBzbGFwZCAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ3NsYXBkJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAic2xhcGQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3NsYXBkJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.7",
+        "description": "Ensure NFS is not installed",
+        "command": "dpkg -s nfs-kernel-server",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBuZnMta2VybmVsLXNlcnZlciAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ25mcy1rZXJuZWwtc2VydmVyJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAibmZzLWtlcm5lbC1zZXJ2ZXIgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ25mcy1rZXJuZWwtc2VydmVyJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.8",
+        "description": "Ensure DNS Server is not installed",
+        "command": "dpkg -s bind9",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBiaW5kOSAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ2JpbmQ5JyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAiYmluZDkgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2JpbmQ5JyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.9",
+        "description": "Ensure FTP Server is not installed",
+        "command": "dpkg -s vsftpd",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyB2c2Z0cGQgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICd2c2Z0cGQnIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJ2c2Z0cGQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3ZzZnRwZCcgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.10",
+        "description": "Ensure HTTP server is not installed",
+        "command": "dpkg -s apache2",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBhcGFjaGUyIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAnYXBhY2hlMicgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gImFwYWNoZTIgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2FwYWNoZTInIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.11",
+        "description": "Ensure IMAP and POP3 server are not installed",
+        "command": "dpkg -s dovecot-imapd dovecot-pop3d",
+        "script": "b3V0cHV0SW1hcGQ9JChkcGtnIC1zIGRvdmVjb3QtaW1hcGQgMj4mMSkKb3V0cHV0UG9wM2Q9JChkcGtnIC1zIGRvdmVjb3QtcG9wM2QgMj4mMSkKZWNobyAiJG91dHB1dEltYXBkIgplY2hvICIkb3V0cHV0UG9wM2QiCmlmIGVjaG8gIiRvdXRwdXRJbWFwZCIgfCBncmVwIC1xICJwYWNrYWdlICdkb3ZlY290LWltYXBkJyBpcyBub3QgaW5zdGFsbGVkIiAmJiBlY2hvICIkb3V0cHV0UG9wM2QiIHwgZ3JlcCAtcSAicGFja2FnZSAnZG92ZWNvdC1wb3AzZCcgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gImRvdmVjb3QtaW1hcGQgYW5kIGRvdmVjb3QtcG9wM2QgYXJlIG5vdCBpbnN0YWxsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHRoZSBwYWNrYWdlICdkb3ZlY290LWltYXBkJyBhbmQgJ2RvdmVjb3QtcG9wM2QnIGFyZSBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.12",
+        "description": "Ensure Samba is not installed",
+        "command": "dpkg -s samba",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBzYW1iYSAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ3NhbWJhJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAic2FtYmEgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3NhbWJhJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.13",
+        "description": "Ensure HTTP Proxy Server is not installed",
+        "command": "dpgk -s squid",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBzcXVpZCAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ3NxdWlkJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAic3F1aWQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3NxdWlkJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.14",
+        "description": "Ensure SNMP Server is not installed",
+        "command": "dpkg -s snmpd",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBzbm1wZCAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ3NubXBkJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAic25tcGQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3NubXBkJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.15",
+        "description": "Ensure mail transfer agent is configured for local-only mode",
+        "command": "ss -lntu | grep -E ':25\\s' | grep -E -v '\\s(127.0.0.1|::1):25\\s'",
+        "script": "b3V0cHV0PSQoc3MgLWxudHUgfCBncmVwIC1FICc6MjVccycgfCBncmVwIC1FIC12ICdccygoMTI3LjAuMC4xfDo6MSk6MjV8XFs6OjFcXToyNSlccycpCmVjaG8gIiRvdXRwdXQiCmlmIFsgLXogIiRvdXRwdXQiIF07IHRoZW4KICAgIGVjaG8gIk1haWwgVHJhbnNmZXIgQWdlbnQgaXMgb25seSBsaXN0ZW5pbmcgb24gbG9vcGJhY2sgYWRkcmVzcyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIE1haWwgVHJhbnNmZXIgQWdlbnQgaXMgb25seSBsaXN0ZW5pbmcgb24gbG9vcGJhY2sgYWRkcmVzcy4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.16",
+        "description": "Ensure rsync service is not installed",
+        "command": "dpkg -s rsync",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyByc3luYyAyPiYxKQplY2hvICIkb3V0cHV0IgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgInBhY2thZ2UgJ3JzeW5jJyBpcyBub3QgaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAicnN5bmMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3JzeW5jJyBpcyBub3QgaW5zdGFsbGVkLiIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.2.17",
+        "description": "Ensure NIS Server is not installed",
+        "command": "dpkg -s nis",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBuaXMgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICduaXMnIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJuaXMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ25pcycgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.1",
+        "description": "Ensure NIS client is not installed",
+        "command": "dpkg -s nis",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBuaXMgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICduaXMnIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJuaXMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ25pcycgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.2",
+        "description": "Ensure rsh client is not installed",
+        "command": "dpkg -s rsh-client",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyByc2gtY2xpZW50IDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAncnNoLWNsaWVudCcgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gInJzaC1jbGllbnQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3JzaC1jbGllbnQnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.3",
+        "description": "Ensure talk client is not installed",
+        "command": "dpkg -s talk",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyB0YWxrIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAndGFsaycgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gInRhbGsgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3RhbGsnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.4",
+        "description": "Ensure telnet client is not installed",
+        "command": "dpkg -s telnet",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyB0ZWxuZXQgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJwYWNrYWdlICd0ZWxuZXQnIGlzIG5vdCBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJ0ZWxuZXQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3RlbG5ldCcgaXMgbm90IGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.5",
+        "description": "Ensure LDAP client is not installed",
+        "command": "dpkg -s ldap-utils",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBsZGFwLXV0aWxzIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAnbGRhcC11dGlscycgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gImxkYXAtdXRpbHMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2xkYXAtdXRpbHMnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.3.6",
+        "description": "Ensure RPC is not installed",
+        "command": "dpkg -s rpcbind",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBycGNiaW5kIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAncnBjYmluZCcgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gInJwY2JpbmQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3JwY2JpbmQnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "2.4",
+        "description": "Ensure nonessential services are removed or masked",
+        "command": "lsof -i -P -n | grep -v \"(ESTABLISHED)\"",
+        "script": "b3V0cHV0PSQobHNvZiAtaSAtUCAtbiB8IGdyZXAgLXYgIihFU1RBQkxJU0hFRCkiIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmVjaG8gIkVuc3VyZSBub25lc3NlbnRpYWwgc2VydmljZXMgYXJlIHJlbW92ZWQgb3IgbWFza2VkIgoKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.1.1",
+        "description": "Disable IPv6",
+        "command": "grep \"^\\s*linux\" /boot/grub/grub.cfg | grep -v \"ipv6.disable=1\"",
+        "script": "b3V0cHV0PSQoZ3JlcCAiXlxzKmxpbnV4IiAvYm9vdC9ncnViL2dydWIuY2ZnIHwgZ3JlcCAtdiAiaXB2Ni5kaXNhYmxlPTEiIDI+JjEpCmVjaG8gIiRvdXRwdXQiCgppZiBbWyAteiAiJG91dHB1dCIgXV07IHRoZW4KICAgIGVjaG8gIklQdjYgaXMgZGlzYWJsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRGlzYWJsZSBJUHY2IgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.1.2",
+        "description": "Ensure wireless interfaces are disabled",
+        "command": "nmcli; sysctl net.ipv4.conf.default.send_redirects; grep \"net\\.ipv4\\.conf\\.all\\.send_redirects\" /etc/sysctl.conf; grep \"net\\.ipv4\\.conf\\.default\\.send_redirects\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "aWYgY29tbWFuZCAtdiBubWNsaSA+L2Rldi9udWxsIDI+JjE7IHRoZW4KICAgIG5tY2xpIHJhZGlvIGFsbCB8IGdyZXAgLUVxICdccypcUytccytkaXNhYmxlZFxzK1xTK1xzK2Rpc2FibGVkCCcgJiYgZWNobyAiV2lyZWxlc3MgaXMgbm90IGVuYWJsZWQiICYmIGV4aXQgMCB8fCBubWNsaSByYWRpbyBhbGwgJiYgZXhpdCAxCmVsaWYgWyAtbiAiJChmaW5kIC9zeXMvY2xhc3MvbmV0LyovIC10eXBlIGQgLW5hbWUgd2lyZWxlc3MpIiBdOyB0aGVuCiAgICB0PTAKICAgIGRyaXZlcnM9JChmaW5kIC9zeXMvY2xhc3MvbmV0LyovIC10eXBlIGQgLW5hbWUgd2lyZWxlc3MgfCB4YXJncyAtSXt9IGRpcm5hbWUge30gfCB4YXJncyAtSXt9IGJhc2VuYW1lICQocmVhZGxpbmsgLWYgInt9L2RldmljZS9kcml2ZXIiKSB8IHNvcnQgLXUpCiAgICBmb3IgZG0gaW4gJGRyaXZlcnM7IGRvCiAgICAgICAgaWYgZ3JlcCAtRXEgIl5ccyppbnN0YWxsXHMrJGRtXHMrL2Jpbi8odHJ1ZXxmYWxzZSkiIC9ldGMvbW9kcHJvYmUuZC8qLmNvbmY7IHRoZW4KICAgICAgICAgICAgL2Jpbi90cnVlCiAgICAgICAgZWxzZQogICAgICAgICAgICBlY2hvICIkZG0gaXMgbm90IGRpc2FibGVkIgogICAgICAgICAgICB0PTEKICAgICAgICBmaQogICAgZG9uZQogICAgW1sgJHQgLWVxIDAgXV0gJiYgZWNobyAiV2lyZWxlc3MgaXMgbm90IGVuYWJsZWQiICYmIGV4aXQgMCB8fCBleGl0IDEKZWxzZQogICAgZWNobyAiV2lyZWxlc3MgaXMgbm90IGVuYWJsZWQiCmZp",
+        "level": [
+            1,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.2.2",
+        "description": "Ensure IP forwarding is disabled",
+        "command": "sysctl net.ipv4.ip_forward; grep -E -s \"^\\s*net\\.ipv4\\.ip_forward\\s*=\\s*1\" /etc/sysctl.conf /etc/sysctl.d/*.conf /usr/lib/sysctl.d/*.conf /run/sysctl.d/*.conf; sysctl net.ipv6.conf.all.forwarding; grep -E -s \"^\\s*net\\.ipv6\\.conf\\.all\\.forwarding\\s*=\\s*1\" /etc/sysctl.conf /etc/sysctl.d/*.conf /usr/lib/sysctl.d/*.conf /run/sysctl.d/*.conf",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5pcF9mb3J3YXJkKQpvdXRwdXQyPSQoZ3JlcCAtRSAtcyAiXlxzKm5ldFwuaXB2NFwuaXBfZm9yd2FyZFxzKj1ccyoxIiAvZXRjL3N5c2N0bC5jb25mIC9ldGMvc3lzY3RsLmQvKi5jb25mIC91c3IvbGliL3N5c2N0bC5kLyouY29uZiAvcnVuL3N5c2N0bC5kLyouY29uZikKb3V0cHV0Mz0kKHN5c2N0bCBuZXQuaXB2Ni5jb25mLmFsbC5mb3J3YXJkaW5nKQpvdXRwdXQ0PSQoZ3JlcCAtRSAtcyAiXlxzKm5ldFwuaXB2NlwuY29uZlwuYWxsXC5mb3J3YXJkaW5nXHMqPVxzKjEiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qLmNvbmYgL3Vzci9saWIvc3lzY3RsLmQvKi5jb25mIC9ydW4vc3lzY3RsLmQvKi5jb25mKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJuZXQuaXB2NC5pcF9mb3J3YXJkID0gMCIgJiYgWyAteiAiJG91dHB1dDIiXSAmJiBlY2hvICIkb3V0cHV0MyIgfCBncmVwIC1xICJuZXQuaXB2Ni5jb25mLmFsbC5mb3J3YXJkaW5nID0gMCIgJiYgWyAteiAiJG91dHB1dDQiXTsgdGhlbgogICAgZWNobyAiSVAgZm9yd2FyZGluZyBpcyBkaXNhYmxlZC4iCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIElQIGZvcndhcmRpbmcgaXMgZGlzYWJsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.1",
+        "description": "Ensure source routed packets are not accepted",
+        "command": "sysctl net.ipv4.conf.all.accept_source_route; sysctl net.ipv4.conf.default.accept_source_route; grep \"net\\.ipv4\\.conf\\.all\\.accept_source_route\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv4\\.conf\\.default\\.accept_source_route\" /etc/sysctl.conf /etc/sysctl.d/*; sysctl net.ipv6.conf.all.accept_source_route; sysctl net.ipv6.conf.default.accept_source_route; grep \"net\\.ipv6\\.conf\\.all\\.accept_source_route\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv6\\.conf\\.default\\.accept_source_route\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5jb25mLmFsbC5hY2NlcHRfc291cmNlX3JvdXRlKQpvdXRwdXQyPSQoc3lzY3RsIG5ldC5pcHY0LmNvbmYuZGVmYXVsdC5hY2NlcHRfc291cmNlX3JvdXRlKQpvdXRwdXQzPSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5hbGxcLmFjY2VwdF9zb3VyY2Vfcm91dGUiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5kZWZhdWx0XC5hY2NlcHRfc291cmNlX3JvdXRlIiAvZXRjL3N5c2N0bC5jb25mIC9ldGMvc3lzY3RsLmQvKikKb3V0cHV0NT0kKHN5c2N0bCBuZXQuaXB2Ni5jb25mLmFsbC5hY2NlcHRfc291cmNlX3JvdXRlKQpvdXRwdXQ2PSQoc3lzY3RsIG5ldC5pcHY2LmNvbmYuZGVmYXVsdC5hY2NlcHRfc291cmNlX3JvdXRlKQpvdXRwdXQ3PSQoZ3JlcCAibmV0XC5pcHY2XC5jb25mXC5hbGxcLmFjY2VwdF9zb3VyY2Vfcm91dGUiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ4PSQoZ3JlcCAibmV0XC5pcHY2XC5jb25mXC5kZWZhdWx0XC5hY2NlcHRfc291cmNlX3JvdXRlIiAvZXRjL3N5c2N0bC5jb25mIC9ldGMvc3lzY3RsLmQvKikKCmVjaG8gIiRvdXRwdXQxIgplY2hvICIkb3V0cHV0MiIKZWNobyAiJG91dHB1dDMiCmVjaG8gIiRvdXRwdXQ0IgplY2hvICIkb3V0cHV0NSIKZWNobyAiJG91dHB1dDYiCmVjaG8gIiRvdXRwdXQ3IgplY2hvICIkb3V0cHV0OCIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuYWxsLmFjY2VwdF9zb3VyY2Vfcm91dGUgPSAwIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmRlZmF1bHQuYWNjZXB0X3NvdXJjZV9yb3V0ZSA9IDAiICYmIGVjaG8gIiRvdXRwdXQzIiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuYWxsLmFjY2VwdF9zb3VyY2Vfcm91dGUgPSAwIiAmJiBlY2hvICIkb3V0cHV0NCIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmRlZmF1bHQuYWNjZXB0X3NvdXJjZV9yb3V0ZSA9IDAiICYmIGVjaG8gIiRvdXRwdXQ1IiB8IGdyZXAgLXEgIm5ldC5pcHY2LmNvbmYuYWxsLmFjY2VwdF9zb3VyY2Vfcm91dGUgPSAwIiAmJiBlY2hvICIkb3V0cHV0NiIgfCBncmVwIC1xICJuZXQuaXB2Ni5jb25mLmRlZmF1bHQuYWNjZXB0X3NvdXJjZV9yb3V0ZSA9IDAiICYmIGVjaG8gIiRvdXRwdXQ3IiB8IGdyZXAgLXEgIm5ldC5pcHY2LmNvbmYuYWxsLmFjY2VwdF9zb3VyY2Vfcm91dGUgPSAwIiAmJiBlY2hvICIkb3V0cHV0OCIgfCBncmVwIC1xICJuZXQuaXB2Ni5jb25mLmRlZmF1bHQuYWNjZXB0X3NvdXJjZV9yb3V0ZSA9IDAiOyB0aGVuCiAgICBlY2hvICJTb3VyY2Ugcm91dGVkIHBhY2tldHMgYXJlIG5vdCBhY2NlcHRlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU291cmNlIHJvdXRlZCBwYWNrZXRzIGFyZSBub3QgYWNjZXB0ZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.2",
+        "description": "Ensure ICMP redirects are not accepted",
+        "command": "sysctl net.ipv4.conf.all.accept_redirects; sysctl net.ipv4.conf.default.accept_redirects; grep \"net\\.ipv4\\.conf\\.all\\.accept_redirects\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv4\\.conf\\.default\\.accept_redirects\" /etc/sysctl.conf /etc/sysctl.d/*; sysctl net.ipv6.conf.all.accept_redirects; sysctl net.ipv6.conf.default.accept_redirects; grep \"net\\.ipv6\\.conf\\.all\\.accept_redirects\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv6\\.conf\\.default\\.accept_redirects\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5jb25mLmFsbC5hY2NlcHRfcmVkaXJlY3RzKQpvdXRwdXQyPSQoc3lzY3RsIG5ldC5pcHY0LmNvbmYuZGVmYXVsdC5hY2NlcHRfcmVkaXJlY3RzKQpvdXRwdXQzPSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5hbGxcLmFjY2VwdF9yZWRpcmVjdHMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5kZWZhdWx0XC5hY2NlcHRfcmVkaXJlY3RzIiAvZXRjL3N5c2N0bC5jb25mIC9ldGMvc3lzY3RsLmQvKikKb3V0cHV0NT0kKHN5c2N0bCBzeXNjdGwgbmV0LmlwdjYuY29uZi5hbGwuYWNjZXB0X3JlZGlyZWN0cykKb3V0cHV0Nj0kKHN5c2N0bCBzeXNjdGwgbmV0LmlwdjYuY29uZi5kZWZhdWx0LmFjY2VwdF9yZWRpcmVjdHMpCm91dHB1dDc9JChncmVwICJuZXRcLmlwdjZcLmNvbmZcLmFsbFwuYWNjZXB0X3JlZGlyZWN0cyIgL2V0Yy9zeXNjdGwuY29uZiAvZXRjL3N5c2N0bC5kLyopCm91dHB1dDg9JChncmVwICJuZXRcLmlwdjZcLmNvbmZcLmRlZmF1bHRcLmFjY2VwdF9yZWRpcmVjdHMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCmVjaG8gIiRvdXRwdXQ1IgplY2hvICIkb3V0cHV0NiIKZWNobyAiJG91dHB1dDciCmVjaG8gIiRvdXRwdXQ4IgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwuYWNjZXB0X3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuZGVmYXVsdC5hY2NlcHRfcmVkaXJlY3RzID0gMCIgJiYgZWNobyAiJG91dHB1dDMiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwuYWNjZXB0X3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQ0IiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuZGVmYXVsdC5hY2NlcHRfcmVkaXJlY3RzID0gMCIgJiYgZWNobyAiJG91dHB1dDUiIHwgZ3JlcCAtcSAibmV0LmlwdjYuY29uZi5hbGwuYWNjZXB0X3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQ2IiB8IGdyZXAgLXEgIm5ldC5pcHY2LmNvbmYuZGVmYXVsdC5hY2NlcHRfcmVkaXJlY3RzID0gMCIgJiYgZWNobyAiJG91dHB1dDciIHwgZ3JlcCAtcSAibmV0LmlwdjYuY29uZi5hbGwuYWNjZXB0X3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQ4IiB8IGdyZXAgLXEgIm5ldC5pcHY2LmNvbmYuZGVmYXVsdC5hY2NlcHRfcmVkaXJlY3RzID0gMCI7IHRoZW4KICAgIGVjaG8gIklDTVAgcmVkaXJlY3RzIGFyZSBub3QgYWNjZXB0ZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIElDTVAgcmVkaXJlY3RzIGFyZSBub3QgYWNjZXB0ZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.3",
+        "description": "Ensure secure ICMP redirects are not accepted",
+        "command": "sysctl net.ipv4.conf.all.secure_redirects; sysctl net.ipv4.conf.default.secure_redirects; grep \"net\\.ipv4\\.conf\\.all\\.secure_redirects\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv4\\.conf\\.default\\.secure_redirects\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5jb25mLmFsbC5zZWN1cmVfcmVkaXJlY3RzKQpvdXRwdXQyPSQoc3lzY3RsIG5ldC5pcHY0LmNvbmYuZGVmYXVsdC5zZWN1cmVfcmVkaXJlY3RzKQpvdXRwdXQzPSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5hbGxcLnNlY3VyZV9yZWRpcmVjdHMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5kZWZhdWx0XC5zZWN1cmVfcmVkaXJlY3RzIiAvZXRjL3N5c2N0bC5jb25mIC9ldGMvc3lzY3RsLmQvKikKCmVjaG8gIiRvdXRwdXQxIgplY2hvICIkb3V0cHV0MiIKZWNobyAiJG91dHB1dDMiCmVjaG8gIiRvdXRwdXQ0IgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwuc2VjdXJlX3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuZGVmYXVsdC5zZWN1cmVfcmVkaXJlY3RzID0gMCIgJiYgZWNobyAiJG91dHB1dDMiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwuc2VjdXJlX3JlZGlyZWN0cyA9IDAiICYmIGVjaG8gIiRvdXRwdXQ0IiB8IGdyZXAgLXEgIm5ldC5pcHY0LmNvbmYuZGVmYXVsdC5zZWN1cmVfcmVkaXJlY3RzID0gMCI7IHRoZW4KICAgIGVjaG8gIlNlY3VyZSBJQ01QIHJlZGlyZWN0cyBhcmUgbm90IGFjY2VwdGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBzZWN1cmUgSUNNUCByZWRpcmVjdHMgYXJlIG5vdCBhY2NlcHRlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.4",
+        "description": "Ensure suspicious packets are logged",
+        "command": "sysctl net.ipv4.conf.all.log_martians; sysctl net.ipv4.conf.default.log_martians; grep \"net\\.ipv4\\.conf\\.all\\.log_martians\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv4\\.conf\\.default\\.log_martians\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5jb25mLmFsbC5sb2dfbWFydGlhbnMpCm91dHB1dDI9JChzeXNjdGwgbmV0LmlwdjQuY29uZi5kZWZhdWx0LmxvZ19tYXJ0aWFucykKb3V0cHV0Mz0kKGdyZXAgIm5ldFwuaXB2NFwuY29uZlwuYWxsXC5sb2dfbWFydGlhbnMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5kZWZhdWx0XC5sb2dfbWFydGlhbnMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmFsbC5sb2dfbWFydGlhbnMgPSAxIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmRlZmF1bHQubG9nX21hcnRpYW5zID0gMSIgJiYgZWNobyAiJG91dHB1dDMiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwubG9nX21hcnRpYW5zID0gMSIgJiYgZWNobyAiJG91dHB1dDQiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5kZWZhdWx0LmxvZ19tYXJ0aWFucyA9IDEiOyB0aGVuCiAgICBlY2hvICJTdXNwaWNpb3VzIHBhY2tldHMgYXJlIGxvZ2dlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgc3VzcGljaW91cyBwYWNrZXRzIGFyZSBsb2dnZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.5",
+        "description": "Ensure broadcast ICMP requests are ignored",
+        "command": "sysctl net.ipv4.icmp_echo_ignore_broadcasts; grep \"net\\.ipv4\\.icmp_echo_ignore_broadcasts\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5pY21wX2VjaG9faWdub3JlX2Jyb2FkY2FzdHMpCm91dHB1dDI9JChncmVwICJuZXRcLmlwdjRcLmljbXBfZWNob19pZ25vcmVfYnJvYWRjYXN0cyIgL2V0Yy9zeXNjdGwuY29uZiAvZXRjL3N5c2N0bC5kLyopCgplY2hvICIkb3V0cHV0MSIKZWNobyAiJG91dHB1dDIiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJuZXQuaXB2NC5pY21wX2VjaG9faWdub3JlX2Jyb2FkY2FzdHMgPSAxIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2NC5pY21wX2VjaG9faWdub3JlX2Jyb2FkY2FzdHMgPSAxIjsgdGhlbgogICAgZWNobyAiQnJvYWRjYXN0IElDTVAgcmVxdWVzdHMgYXJlIGlnbm9yZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGJyb2FkY2FzdCBJQ01QIHJlcXVlc3RzIGFyZSBpZ25vcmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.6",
+        "description": "Ensure bogus ICMP responses are ignored",
+        "command": "sysctl net.ipv4.icmp_ignore_bogus_error_responses; grep \"net.ipv4.icmp_ignore_bogus_error_responses\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5pY21wX2lnbm9yZV9ib2d1c19lcnJvcl9yZXNwb25zZXMpCm91dHB1dDI9JChncmVwICJuZXQuaXB2NC5pY21wX2lnbm9yZV9ib2d1c19lcnJvcl9yZXNwb25zZXMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAibmV0LmlwdjQuaWNtcF9pZ25vcmVfYm9ndXNfZXJyb3JfcmVzcG9uc2VzID0gMSIgJiYgZWNobyAiJG91dHB1dDIiIHwgZ3JlcCAtcSAibmV0LmlwdjQuaWNtcF9pZ25vcmVfYm9ndXNfZXJyb3JfcmVzcG9uc2VzID0gMSI7IHRoZW4KICAgIGVjaG8gIkJvZ3VzIElDTVAgcmVzcG9uc2VzIGFyZSBpZ25vcmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBib2d1cyBJQ01QIHJlc3BvbnNlcyBhcmUgaWdub3JlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.7",
+        "description": "Ensure Reverse Path Filtering is enabled",
+        "command": "sysctl net.ipv4.conf.all.rp_filter; sysctl net.ipv4.conf.default.rp_filter; grep \"net\\.ipv4\\.conf\\.all\\.rp_filter\" /etc/sysctl.conf /etc/sysctl.d/* net.ipv4.conf.all.rp_filter = 1; grep \"net\\.ipv4\\.conf\\.default\\.rp_filter\" /etc/sysctl.conf /etc/sysctl.d/* net.ipv4.conf.default.rp_filter = 1",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC5jb25mLmFsbC5ycF9maWx0ZXIpCm91dHB1dDI9JChzeXNjdGwgbmV0LmlwdjQuY29uZi5kZWZhdWx0LnJwX2ZpbHRlcikKb3V0cHV0Mz0kKGdyZXAgIm5ldFwuaXB2NFwuY29uZlwuYWxsXC5ycF9maWx0ZXIiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY0XC5jb25mXC5kZWZhdWx0XC5ycF9maWx0ZXIiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmFsbC5ycF9maWx0ZXIgPSAxIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2NC5jb25mLmRlZmF1bHQucnBfZmlsdGVyID0gMSIgJiYgZWNobyAiJG91dHB1dDMiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5hbGwucnBfZmlsdGVyID0gMSIgJiYgZWNobyAiJG91dHB1dDQiIHwgZ3JlcCAtcSAibmV0LmlwdjQuY29uZi5kZWZhdWx0LnJwX2ZpbHRlciA9IDEiOyB0aGVuCiAgICBlY2hvICJSZXZlcnNlIFBhdGggRmlsdGVyaW5nIGlzIGVuYWJsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIFJldmVyc2UgUGF0aCBGaWx0ZXJpbmcgaXMgZW5hYmxlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.8",
+        "description": "Ensure TCP SYN Cookies is enabled",
+        "command": "sysctl net.ipv4.tcp_syncookies; grep \"net\\.ipv4\\.tcp_syncookies\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2NC50Y3Bfc3luY29va2llcykKb3V0cHV0Mj0kKGdyZXAgIm5ldFwuaXB2NFwudGNwX3N5bmNvb2tpZXMiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAibmV0LmlwdjQudGNwX3N5bmNvb2tpZXMgPSAxIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2NC50Y3Bfc3luY29va2llcyA9IDEiOyB0aGVuCiAgICBlY2hvICJUQ1AgU1lOIENvb2tpZXMgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgVENQIFNZTiBDb29raWVzIGlzIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.3.9",
+        "description": "Ensure IPv6 router advertisements are not accepted",
+        "command": "sysctl net.ipv6.conf.all.accept_ra; sysctl net.ipv6.conf.default.accept_ra; grep \"net\\.ipv6\\.conf\\.all\\.accept_ra\" /etc/sysctl.conf /etc/sysctl.d/*; grep \"net\\.ipv6\\.conf\\.default\\.accept_ra\" /etc/sysctl.conf /etc/sysctl.d/*",
+        "script": "b3V0cHV0MT0kKHN5c2N0bCBuZXQuaXB2Ni5jb25mLmFsbC5hY2NlcHRfcmEpCm91dHB1dDI9JChzeXNjdGwgbmV0LmlwdjYuY29uZi5kZWZhdWx0LmFjY2VwdF9yYSkKb3V0cHV0Mz0kKGdyZXAgIm5ldFwuaXB2NlwuY29uZlwuYWxsXC5hY2NlcHRfcmEiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQpvdXRwdXQ0PSQoZ3JlcCAibmV0XC5pcHY2XC5jb25mXC5kZWZhdWx0XC5hY2NlcHRfcmEiIC9ldGMvc3lzY3RsLmNvbmYgL2V0Yy9zeXNjdGwuZC8qKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJuZXQuaXB2Ni5jb25mLmFsbC5hY2NlcHRfcmEgPSAwIiAmJiBlY2hvICIkb3V0cHV0MiIgfCBncmVwIC1xICJuZXQuaXB2Ni5jb25mLmRlZmF1bHQuYWNjZXB0X3JhID0gMCIgJiYgZWNobyAiJG91dHB1dDMiIHwgZ3JlcCAtcSAibmV0LmlwdjYuY29uZi5hbGwuYWNjZXB0X3JhID0gMCIgJiYgZWNobyAiJG91dHB1dDQiIHwgZ3JlcCAtcSAibmV0LmlwdjYuY29uZi5kZWZhdWx0LmFjY2VwdF9yYSA9IDAiOyB0aGVuCiAgICBlY2hvICJJUHY2IHJvdXRlciBhZHZlcnRpc2VtZW50cyBhcmUgbm90IGFjY2VwdGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBJUHY2IHJvdXRlciBhZHZlcnRpc2VtZW50cyBhcmUgbm90IGFjY2VwdGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.4.1",
+        "description": "Ensure DCCP is disabled",
+        "command": "modprobe -n -v dccp",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgZGNjcCkKbW9kY21kPSQobW9kcHJvYmUgLW4gLXYgZGNjcCAyPiYxKQoKZWNobyAiJGxzY21kIgplY2hvICIkbW9kY21kIgoKaWYgZWNobyAkbW9kY21kIHwgZ3JlcCAiaW5zdGFsbCAvYmluL3RydWUiICYmIFsgLXogIiRsc2NtZCIgXTsgdGhlbgogICAgZWNobyAiRENDUCBpcyBkZWFjdGl2YXRlZCIKICAgIGV4aXQgMAplbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSBkY2NwIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICBlY2hvICJTZWVtcyBsaWtlIERDQ1AgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJEQ0NQIHNlZW1zIHRvIGJlIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.4.2",
+        "description": "Ensure SCTP is disabled",
+        "command": "modprobe -n -v sctp | grep -E '(sctp|install)'",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgc2N0cCkKbW9kY21kPSQobW9kcHJvYmUgLW4gLXYgc2N0cCB8IGdyZXAgLUUgJyhzY3RwfGluc3RhbGwpJyAyPiYxKQoKZWNobyAiJGxzY21kIgplY2hvICIkbW9kY21kIgoKaWYgZWNobyAkbW9kY21kIHwgZ3JlcCAiaW5zdGFsbCAvYmluL3RydWUiICYmIFsgLXogIiRsc2NtZCIgXTsgdGhlbgogICAgZWNobyAiU0NUUCBpcyBkZWFjdGl2YXRlZCIKICAgIGV4aXQgMAplbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSBzY3RwIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICBlY2hvICJTZWVtcyBsaWtlIFNDVFAgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJTQ1RQIHNlZW1zIHRvIGJlIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.4.3",
+        "description": "Ensure RDS is disabled",
+        "command": "modprobe -n -v rds",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgcmRzKQptb2RjbWQ9JChtb2Rwcm9iZSAtbiAtdiByZHMgMj4mMSkKCmVjaG8gIiRsc2NtZCIKZWNobyAiJG1vZGNtZCIKCmlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgImluc3RhbGwgL2Jpbi90cnVlIiAmJiBbIC16ICIkbHNjbWQiIF07IHRoZW4KICAgIGVjaG8gInJkcyBpcyBkZWFjdGl2YXRlZCIKICAgIGV4aXQgMAplbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSByZHMgbm90IGZvdW5kIiAmJiBbIC16ICIkbHNjbWQiIF07IHRoZW4KICAgIGVjaG8gIlNlZW1zIGxpa2UgcmRzIGlzIG5vdCBpbnN0YWxsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAicmRzIHNlZW1zIHRvIGJlIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.4.4",
+        "description": "Ensure TIPC is disabled",
+        "command": "modprobe -n -v tipc | grep -E '(tipc|install)'",
+        "script": "bHNjbWQ9JChsc21vZCB8IGdyZXAgdGlwYykKbW9kY21kPSQobW9kcHJvYmUgLW4gLXYgdGlwYyB8IGdyZXAgLUUgJyh0aXBjfGluc3RhbGwpJyAyPiYxKQoKZWNobyAiJGxzY21kIgplY2hvICIkbW9kY21kIgoKaWYgZWNobyAkbW9kY21kIHwgZ3JlcCAiaW5zdGFsbCAvYmluL3RydWUiICYmIFsgLXogIiRsc2NtZCIgXTsgdGhlbgogICAgZWNobyAidGlwYyBpcyBkZWFjdGl2YXRlZCIKICAgIGV4aXQgMAplbGlmIGVjaG8gJG1vZGNtZCB8IGdyZXAgIk1vZHVsZSB0aXBjIG5vdCBmb3VuZCIgJiYgWyAteiAiJGxzY21kIiBdOyB0aGVuCiAgICBlY2hvICJTZWVtcyBsaWtlIHRpcGMgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJ0aXBjIHNlZW1zIHRvIGJlIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.1",
+        "description": "Ensure Uncomplicated Firewall is installed",
+        "command": "dpkg -s ufw | grep 'Status: install'",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyB1ZncgMj4mMSkKZWNobyAiJG91dHB1dCIKaWYgZWNobyAiJG91dHB1dCIgfCBncmVwIC1xICJpbnN0YWxsIG9rIGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gIlVmdyBpcyBpbnN0YWxsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHRoZSBwYWNrYWdlICd1ZncnIGlzIGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmkK",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.2",
+        "description": "Ensure iptables-persistent is not installed",
+        "command": "dpkg-query -s iptables-persistent",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyBpcHRhYmxlcy1wZXJzaXN0ZW50IDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAicGFja2FnZSAnaXB0YWJsZXMtcGVyc2lzdGVudCcgaXMgbm90IGluc3RhbGxlZCI7IHRoZW4KICAgIGVjaG8gImlwdGFibGVzLXBlcnNpc3RlbnQgaXMgbm90IGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ2lwdGFibGVzLXBlcnNpc3RlbnQnIGlzIG5vdCBpbnN0YWxsZWQuIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.3",
+        "description": "Ensure ufw service is enabled",
+        "command": "systemctl is-enabled ufw; ufw status | grep Status",
+        "script": "b3V0cHV0MT0kKHN5c3RlbWN0bCBpcy1lbmFibGVkIHVmdyAyPiYxKQpvdXRwdXQyPSQoc3VkbyB1Zncgc3RhdHVzIHwgZ3JlcCBTdGF0dXMgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgplY2hvICIkb3V0cHV0MiIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgImVuYWJsZWQiICYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIlN0YXR1czogYWN0aXZlIjsgdGhlbgogICAgZWNobyAiVWZ3IHNlcnZpY2UgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdWZ3IHNlcnZpY2UgaXMgZW5hYmxlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.4",
+        "description": "Ensure loopback traffic is configured",
+        "command": "ufw status verbose",
+        "script": "b3V0cHV0PSQoc3VkbyB1Zncgc3RhdHVzIHZlcmJvc2UgMj4mMSkKCmVjaG8gIiRvdXRwdXQiCgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgLWUgIi4qQW55d2hlcmUgb24gbG9ccypBTExPVyBJTlxzKkFueXdoZXJlLioiIC1lICIuKkFueXdoZXJlXHMqREVOWSBJTlxzKjEyNy4wLjAuMC84LioiIC1lICIuKkFueXdoZXJlICh2NilccypERU5ZIElOXHMqOjoxLioiIC1lICIuKkFueXdoZXJlICh2Nikgb24gbG9ccypBTExPVyBJTlxzKkFueXdoZXJlICh2NikuKiI7IHRoZW4gIyYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIlN0YXR1czogYWN0aXZlIjsgdGhlbgogICAgZWNobyAiTG9vcGJhY2sgdHJhZmZpYyBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBsb29wYmFjayB0cmFmZmljIGlzIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.5",
+        "description": "Ensure outbound connections are configured",
+        "command": "ufw status numbered",
+        "script": "b3V0cHV0MT0kKHN1ZG8gdWZ3IHN0YXR1cyBudW1iZXJlZCAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgplY2hvICJFbnN1cmUgb3V0Ym91bmQgY29ubmVjdGlvbnMgYXJlIGNvbmZpZ3VyZWQiCmV4aXQgMTA=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.6",
+        "description": "Ensure firewall rules exist for all open ports",
+        "command": "ss -4tuln; ufw status",
+        "script": "b3V0cHV0MT0kKHNzIC00dHVsbiAyPiYxKQpvdXRwdXQyPSQoc3VkbyB1Zncgc3RhdHVzIDI+JjEpCmVjaG8gLWUgIgpPUEVOIFBPUlRTOiAKIgplY2hvICIkb3V0cHV0MSIKZWNobyAtZSAiCkZJUkVXQUxMIFJVTEVTOiAKIgplY2hvICIkb3V0cHV0MiIKCmVjaG8gLWUgIgpFbnN1cmUgZmlyZXdhbGwgcnVsZXMgZXhpc3QgZm9yIGFsbCBvcGVuIHBvcnRzIgpleGl0IDEw",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "3.5.1.7",
+        "description": "Ensure default deny firewall policy",
+        "command": "ufw status verbose",
+        "script": "b3V0cHV0PSQoc3VkbyB1Zncgc3RhdHVzIHZlcmJvc2UgMj4mMSkKCmVjaG8gIiRvdXRwdXQiCgppZiBlY2hvICIkb3V0cHV0IiB8IGdyZXAgLXEgLWUgIi4qRGVmYXVsdDogZGVueSAoaW5jb21pbmcpLCBkZW55IChvdXRnb2luZyksIGRpc2FibGVkIChyb3V0ZWQpLioiIC1lICIuKkFueXdoZXJlXHMqREVOWSBJTlxzKjEyNy4wLjAuMC84LioiIC1lICIuKkFueXdoZXJlICh2NilccypERU5ZIElOXHMqOjoxLioiIC1lICIuKkFueXdoZXJlICh2Nikgb24gbG9ccypBTExPVyBJTlxzKkFueXdoZXJlICh2NikuKiI7IHRoZW4gIyYmIGVjaG8gIiRvdXRwdXQyIiB8IGdyZXAgLXEgIlN0YXR1czogYWN0aXZlIjsgdGhlbgogICAgZWNobyAiRGVmYXVsdCBkZW55IGZpcmV3YWxsIHBvbGljeSBpcyBzZXQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGRlZmF1bHQgZGVueSBmaXJld2FsbCBwb2xpY3kgKEF1dG9tYXRlZCkiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.1.1",
+        "description": "Ensure auditd is installed",
+        "command": "dpkg -s auditd audispd-plugins",
+        "script": "ZHBrZ2NtZD0kKGRwa2cgLXMgYXVkaXRkIGF1ZGlzcGQtcGx1Z2lucykKCmVjaG8gIiRkcGtnY21kIgoKaWYgZWNobyAkZHBrZ2NtZCB8IGdyZXAgImluc3RhbGxccypva1xzaW5zdGFsbGVkIjsgdGhlbgogICAgZWNobyAiQXVkaXRkIGlzIGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgYXVkaXRkIGlzIGluc3RhbGxlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.1.2",
+        "description": "Ensure auditd service is enabled",
+        "command": "systemctl is-enabled auditd",
+        "script": "Y21kPSQoc3lzdGVtY3RsIGlzLWVuYWJsZWQgYXVkaXRkKQoKZWNobyAiJGNtZCIKCmlmIGVjaG8gJGNtZCB8IGdyZXAgLXEgImVuYWJsZWQiOyB0aGVuCiAgICBlY2hvICJBdWRpdGQgc2VydmljZSBpcyBlbmFibGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBhdWRpdGQgc2VydmljZSBpcyBlbmFibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.1.3",
+        "description": "Ensure auditing for processes that start prior to auditd is enabled",
+        "command": "grep \"^\\s*linux\" /boot/grub/grub.cfg | grep -v \"audit=1\"",
+        "script": "Y21kPSQoZ3JlcCAiXlxzKmxpbnV4IiAvYm9vdC9ncnViL2dydWIuY2ZnIHwgZ3JlcCAtdiAiYXVkaXQ9MSIpCgplY2hvICIkY21kIgoKaWYgIFtbIC16ICIkY21kIiBdXSA7IHRoZW4KICAgIGVjaG8gIkF1ZGl0aW5nIGZvciBwcm9jZXNzZXMgdGhhdCBzdGFydCBwcmlvciB0byBhdWRpdGQgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgYXVkaXRpbmcgZm9yIHByb2Nlc3NlcyB0aGF0IHN0YXJ0IHByaW9yIHRvIGF1ZGl0ZCBpcyBlbmFibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.1.4",
+        "description": "Ensure audit_backlog_limit is sufficient",
+        "command": "grep \"^\\s*linux\" /boot/grub/grub.cfg | grep -v \"audit_backlog_limit=\"",
+        "script": "Y21kPSQoZ3JlcCAiXlxzKmxpbnV4IiAvYm9vdC9ncnViL2dydWIuY2ZnIHwgZ3JlcCAtdiAiYXVkaXRfYmFja2xvZ19saW1pdD0iKQoKZWNobyAiJGNtZCIKCmlmICBbWyAteiAiJGNtZCIgXV0gOyB0aGVuCiAgICBlY2hvICJhdWRpdF9iYWNrbG9nX2xpbWl0IGlzIHN1ZmZpY2llbnQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGF1ZGl0X2JhY2tsb2dfbGltaXQgaXMgc3VmZmljaWVudCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.2.1",
+        "description": "Ensure audit log storage size is configured",
+        "command": "grep max_log_file /etc/audit/auditd.conf",
+        "script": "Y21kPSQoc3VkbyBncmVwIG1heF9sb2dfZmlsZSAvZXRjL2F1ZGl0L2F1ZGl0ZC5jb25mKQoKZWNobyAiJGNtZCIKCmlmICBlY2hvICIkY21kIiB8IGdyZXAgLXEgIm1heF9sb2dfZmlsZVxzKj1ccyo4IiA7IHRoZW4KICAgIGVjaG8gIkF1ZGl0IGxvZyBzdG9yYWdlIHNpemUgaXMgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgYXVkaXQgbG9nIHN0b3JhZ2Ugc2l6ZSBpcyBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.2.2",
+        "description": "Ensure audit logs are not automatically deleted",
+        "command": "grep max_log_file_action /etc/audit/auditd.conf",
+        "script": "Y21kPSQoc3VkbyBncmVwIG1heF9sb2dfZmlsZV9hY3Rpb24gL2V0Yy9hdWRpdC9hdWRpdGQuY29uZikKCmVjaG8gIiRjbWQiCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJtYXhfbG9nX2ZpbGVfYWN0aW9uXHMqPVxzKmtlZXBfbG9ncyIgOyB0aGVuCiAgICBlY2hvICJBdWRpdCBsb2dzIGFyZSBub3QgYXV0b21hdGljYWxseSBkZWxldGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBhdWRpdCBsb2dzIGFyZSBub3QgYXV0b21hdGljYWxseSBkZWxldGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.2.3",
+        "description": "Ensure system is disabled when audit logs are full",
+        "command": "grep space_left_action /etc/audit/auditd.conf; grep action_mail_acct /etc/audit/auditd.conf; grep admin_space_left_action /etc/audit/auditd.conf",
+        "script": "Y21kPSQoc3VkbyBncmVwIHNwYWNlX2xlZnRfYWN0aW9uIC9ldGMvYXVkaXQvYXVkaXRkLmNvbmYpCmNtZDI9JChzdWRvIGdyZXAgYWN0aW9uX21haWxfYWNjdCAvZXRjL2F1ZGl0L2F1ZGl0ZC5jb25mKQpjZG0zPSQoc3VkbyBncmVwIGFkbWluX3NwYWNlX2xlZnRfYWN0aW9uIC9ldGMvYXVkaXQvYXVkaXRkLmNvbmYpCgplY2hvICIkY21kIgplY2hvICIkY21kMiIKZWNobyAiJGNtZDMiCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJzcGFjZV9sZWZ0X2FjdGlvblxzKj1ccyplbWFpbCIgJiYgZWNobyAiJGNtZDIiIHwgZ3JlcCAtcSAiYWN0aW9uX21haWxfYWNjdFxzKj1ccypyb290IiAmJiBlY2hvICIkY21kMyIgfCBncmVwIC1xICJhZG1pbl9zcGFjZV9sZWZ0X2FjdGlvblxzKj1ccypoYWx0IjsgdGhlbgogICAgZWNobyAiU3lzdGVtIGlzIGRpc2FibGVkIHdoZW4gYXVkaXQgbG9ncyBhcmUgZnVsbCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgc3lzdGVtIGlzIGRpc2FibGVkIHdoZW4gYXVkaXQgbG9ncyBhcmUgZnVsbCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.3",
+        "description": "Ensure events that modify date and time information are collected",
+        "command": "grep time-change /etc/audit/rules.d/*.rules; auditctl -l | grep time-change",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjY0XHMqLVNccyphZGp0aW1leFxzKi1TXHMqc2V0dGltZW9mZGF5XHMqLWtccyp0aW1lLWNoYW5nZSIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqYWRqdGltZXhccyotU1xzKnNldHRpbWVvZmRheVxzKi1TXHMqc3RpbWVccyota1xzKnRpbWUtY2hhbmdlIiAtZSAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjY0XHMqLVNccypjbG9ja19zZXR0aW1lXHMqLWtccyp0aW1lLWNoYW5nZSIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqY2xvY2tfc2V0dGltZVxzKi1rXHMqdGltZS1jaGFuZ2UiIC1lICJcLXdccyovZXRjL2xvY2FsdGltZVxzKi1wXHMqd2Fccyota1xzKnRpbWUtY2hhbmdlIjsgdGhlbgogICAgICAgIGVjaG8gIkV2ZW50cyB0aGF0IG1vZGlmeSBkYXRlIGFuZCB0aW1lIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGV2ZW50cyB0aGF0IG1vZGlmeSBkYXRlIGFuZCB0aW1lIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQplbHNlCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwICAtZSAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccyphZGp0aW1leFxzKi1TXHMqc2V0dGltZW9mZGF5XHMqLVNccypzdGltZVxzKi1rXHMqdGltZS1jaGFuZ2UiICAtZSAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccypjbG9ja19zZXR0aW1lXHMqLWtccyp0aW1lLWNoYW5nZSIgLWUgIlwtd1xzKi9ldGMvbG9jYWx0aW1lXHMqLXBccyp3YVxzKi1rXHMqdGltZS1jaGFuZ2UiOyB0aGVuCiAgICAgICAgZWNobyAiRXZlbnRzIHRoYXQgbW9kaWZ5IGRhdGUgYW5kIHRpbWUgaW5mb3JtYXRpb24gYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJFbnN1cmUgZXZlbnRzIHRoYXQgbW9kaWZ5IGRhdGUgYW5kIHRpbWUgaW5mb3JtYXRpb24gYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDEKICAgIGZpCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.4",
+        "description": "Ensure events that modify user/group information are collected",
+        "command": "grep identity /etc/audit/rules.d/*.rules; auditctl -l | grep identity",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC13XHMqL2V0Yy9ncm91cFxzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IiAtZSAiXC13XHMqL2V0Yy9wYXNzd2RccyotcFxzKndhXHMqLWtccyppZGVudGl0eSIgLWUgIlwtd1xzKi9ldGMvZ3NoYWRvd1xzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IiAtZSAiXC13XHMqL2V0Yy9zaGFkb3dccyotcFxzKndhXHMqLWtccyppZGVudGl0eSIgLWUgIlwtd1xzKi9ldGMvc2VjdXJpdHkvb3Bhc3N3ZFxzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IjsgdGhlbgogICAgICAgIGVjaG8gIkV2ZW50cyB0aGF0IG1vZGlmeSB1c2VyL2dyb3VwIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGV2ZW50cyB0aGF0IG1vZGlmeSB1c2VyL2dyb3VwIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQplbHNlCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC13XHMqL2V0Yy9ncm91cFxzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IiAtZSAiXC13XHMqL2V0Yy9wYXNzd2RccyotcFxzKndhXHMqLWtccyppZGVudGl0eSIgLWUgIlwtd1xzKi9ldGMvZ3NoYWRvd1xzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IiAtZSAiXC13XHMqL2V0Yy9zaGFkb3dccyotcFxzKndhXHMqLWtccyppZGVudGl0eSIgLWUgIlwtd1xzKi9ldGMvc2VjdXJpdHkvb3Bhc3N3ZFxzKi1wXHMqd2Fccyota1xzKmlkZW50aXR5IjsgdGhlbgogICAgICAgIGVjaG8gIkV2ZW50cyB0aGF0IG1vZGlmeSB1c2VyL2dyb3VwIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGV2ZW50cyB0aGF0IG1vZGlmeSB1c2VyL2dyb3VwIGluZm9ybWF0aW9uIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.5",
+        "description": "Ensure events that modify the system's network environment are collected",
+        "command": "grep system-locale /etc/audit/rules.d/*.rules; auditctl -l | grep system-locale",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccypzZXRob3N0bmFtZVxzKi1TXHMqc2V0ZG9tYWlubmFtZVxzKi1rXHMqc3lzdGVtLWxvY2FsZSIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWI2NFxzKi1TXHMqc2V0aG9zdG5hbWVccyotU1xzKnNldGRvbWFpbm5hbWVccyota1xzKnN5c3RlbS1sb2NhbGUiIC1lICJcLXdccyovZXRjL2lzc3VlXHMqLXBccyp3YVxzKi1rXHMqc3lzdGVtLWxvY2FsZSIgLWUgIlwtd1xzKi9ldGMvaXNzdWUubmV0XHMqLXBccyp3YVxzKi1rXHMqc3lzdGVtLWxvY2FsZSIgLWUgIlwtd1xzKi9ldGMvaG9zdHNccyotcFxzKndhXHMqLWtccypzeXN0ZW0tbG9jYWxlIiAtZSAiXC13IC9ldGMvbmV0d29ya1xzKi1wXHMqd2Fccyota1xzKnN5c3RlbS1sb2NhbGUiOyB0aGVuCiAgICAgICAgZWNobyAiRXZlbnRzIHRoYXQgbW9kaWZ5IHRoZSBzeXN0ZW0ncyBuZXR3b3JrIGVudmlyb25tZW50IGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGV2ZW50cyB0aGF0IG1vZGlmeSB0aGUgc3lzdGVtJ3MgbmV0d29yayBlbnZpcm9ubWVudCBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZWxzZQogICAgaWYgZWNobyAiJGNtZDIiIHwgZ3JlcCAtZSAgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqc2V0aG9zdG5hbWVccyotU1xzKnNldGRvbWFpbm5hbWVccyota1xzKnN5c3RlbS1sb2NhbGUiIC1lICJcLXdccyovZXRjL2lzc3VlXHMqLXBccyp3YVxzKi1rXHMqc3lzdGVtLWxvY2FsZSIgLWUgIlwtd1xzKi9ldGMvaXNzdWUubmV0XHMqLXBccyp3YVxzKi1rXHMqc3lzdGVtLWxvY2FsZSIgLWUgIlwtd1xzKi9ldGMvaG9zdHNccyotcFxzKndhXHMqLWtccypzeXN0ZW0tbG9jYWxlIiAtZSAiXC13IC9ldGMvbmV0d29ya1xzKi1wXHMqd2Fccyota1xzKnN5c3RlbS1sb2NhbGUiOyB0aGVuCiAgICAgICAgZWNobyAiRXZlbnRzIHRoYXQgbW9kaWZ5IHRoZSBzeXN0ZW0ncyBuZXR3b3JrIGVudmlyb25tZW50IGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGV2ZW50cyB0aGF0IG1vZGlmeSB0aGUgc3lzdGVtJ3MgbmV0d29yayBlbnZpcm9ubWVudCBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.6",
+        "description": "Ensure events that modify the system's Mandatory Access Controls are collected",
+        "command": "grep MAC-policy /etc/audit/rules.d/*.rules; auditctl -l | grep MAC-policy",
+        "script": "Y21kPSQoc3VkbyBiYXNoIC1jICJjYXQgL2V0Yy9hdWRpdC9ydWxlcy5kLyoucnVsZXMgMj4mMSIpCgplY2hvICIkY21kIgplY2hvIAplY2hvCgppZiBlY2hvICIkY21kIiB8IGdyZXAgLWUgICJcLXdccyovZXRjL2FwcGFybW9yL1xzKi1wXHMqd2Fccyota1xzKk1BQy1wb2xpY3kiIC1lICJcLXdccyovZXRjL2FwcGFybW9yLmQvXHMqLXBccyp3YVxzKi1rXHMqTUFDLXBvbGljeSI7IHRoZW4KICAgIGVjaG8gIkV2ZW50cyB0aGF0IG1vZGlmeSB0aGUgc3lzdGVtJ3MgTWFuZGF0b3J5IEFjY2VzcyBDb250cm9scyBhcmUgY29sbGVjdGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBldmVudHMgdGhhdCBtb2RpZnkgdGhlIHN5c3RlbSdzIE1hbmRhdG9yeSBBY2Nlc3MgQ29udHJvbHMgYXJlIGNvbGxlY3RlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.7",
+        "description": "Ensure login and logout events are collected",
+        "command": "grep logins /etc/audit/rules.d/*.rules; auditctl -l | grep logins",
+        "script": "Y21kPSQoc3VkbyBiYXNoIC1jICJjYXQgL2V0Yy9hdWRpdC9ydWxlcy5kLyoucnVsZXMgMj4mMSIpCgplY2hvICIkY21kIgplY2hvIAplY2hvCgppZiBlY2hvICIkY21kIiB8IGdyZXAgLWUgICJcLXdccyovdmFyL2xvZy9mYWlsbG9nXHMqLXBccyp3YVxzKi1rXHMqbG9naW5zIiAtZSAiXC13XHMqL3Zhci9sb2cvbGFzdGxvZ1xzKi1wXHMqd2Fccyota1xzKmxvZ2lucyIgLWUgIlwtd1xzKi92YXIvbG9nL3RhbGx5bG9nXHMqLXBccyp3YVxzKi1rXHMqbG9naW5zIjsgdGhlbgogICAgZWNobyAiTG9naW4gYW5kIGxvZ291dCBldmVudHMgYXJlIGNvbGxlY3RlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgbG9naW4gYW5kIGxvZ291dCBldmVudHMgYXJlIGNvbGxlY3RlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.8",
+        "description": "Ensure session initiation information is collected",
+        "command": "grep -E '(session|logins)' /etc/audit/rules.d/*.rules; auditctl -l | grep -E '(session|logins)'",
+        "script": "Y21kPSQoc3VkbyBiYXNoIC1jICJjYXQgL2V0Yy9hdWRpdC9ydWxlcy5kLyoucnVsZXMgMj4mMSIpCgplY2hvICIkY21kIgplY2hvIAplY2hvCgppZiBlY2hvICIkY21kIiB8IGdyZXAgLWUgICJcLXdccyovdmFyL3J1bi91dG1wXHMqLXBccyp3YVxzKi1rXHMqc2Vzc2lvbiIgLWUgIlwtd1xzKi92YXIvbG9nL3d0bXBccyotcFxzKndhXHMqLWtccypsb2dpbnMiIC1lICJcLXdccyovdmFyL2xvZy9idG1wXHMqLXBccyp3YVxzKi1rXHMqbG9naW5zIjsgdGhlbgogICAgZWNobyAiU2Vzc2lvbiBpbml0aWF0aW9uIGluZm9ybWF0aW9uIGlzIGNvbGxlY3RlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgc2Vzc2lvbiBpbml0aWF0aW9uIGluZm9ybWF0aW9uIGlzIGNvbGxlY3RlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.9",
+        "description": "Ensure discretionary access control permission modification events are collected",
+        "command": "grep perm_mod /etc/audit/rules.d/*.rules; auditctl -l | grep perm_mod",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccypjaG1vZFxzKi1TXHMqZmNobW9kXHMqLVNccypmY2htb2RhdFxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqcGVybV9tb2QiIC1lICJcLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iMzJccyotU1xzKmNob3duXHMqLVNccypmY2hvd25ccyotU1xzKmZjaG93bmF0XHMqLVNccypsY2hvd25ccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyota1xzKnBlcm1fbW9kIiAtZSAiLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iMzJccyotU1xzKnNldHhhdHRyXHMqLVNccypsc2V0eGF0dHJccyotU1xzKmZzZXR4YXR0clxzKi1TXHMqcmVtb3ZleGF0dHJccyotU1xzKmxyZW1vdmV4YXR0clxzKi1TXHMqZnJlbW92ZXhhdHRyXHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1IiAtZSAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjY0XHMqLVNccypjaG1vZFxzKi1TXHMqZmNobW9kXHMqLVNccypmY2htb2RhdFxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqcGVybV9tb2QiIC1lICJcLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iNjRccyotU1xzKmNob3duXHMqLVNccypmY2hvd25ccyotU1xzKmZjaG93bmF0XHMqLVNccypsY2hvd25ccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyota1xzKnBlcm1fbW9kIiAtZSAiLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iNjRccyotU1xzKnNldHhhdHRyXHMqLVNccypsc2V0eGF0dHJccyotU1xzKmZzZXR4YXR0clxzKi1TXHMqcmVtb3ZleGF0dHJccyotU1xzKmxyZW1vdmV4YXR0clxzKi1TXHMqZnJlbW92ZXhhdHRyXHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1IiAtZSAiXC1rXHMqcGVybV9tb2QiOyB0aGVuCiAgICAgICAgZWNobyAiRGlzY3JldGlvbmFyeSBhY2Nlc3MgY29udHJvbCBwZXJtaXNzaW9uIG1vZGlmaWNhdGlvbiBldmVudHMgYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJFbnN1cmUgZGlzY3JldGlvbmFyeSBhY2Nlc3MgY29udHJvbCBwZXJtaXNzaW9uIG1vZGlmaWNhdGlvbiBldmVudHMgYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDEKICAgIGZpCmVsc2UKICAgIGlmIGVjaG8gIiRjbWQyIiB8IGdyZXAgLWUgICJcLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iMzJccyotU1xzKmNobW9kXHMqLVNccypmY2htb2RccyotU1xzKmZjaG1vZGF0XHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLWtccypwZXJtX21vZCIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqY2hvd25ccyotU1xzKmZjaG93blxzKi1TXHMqZmNob3duYXRccyotU1xzKmxjaG93blxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqcGVybV9tb2QiIC1lICItYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqc2V0eGF0dHJccyotU1xzKmxzZXR4YXR0clxzKi1TXHMqZnNldHhhdHRyXHMqLVNccypyZW1vdmV4YXR0clxzKi1TXHMqbHJlbW92ZXhhdHRyXHMqLVNccypmcmVtb3ZleGF0dHJccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTUiIC1lICJcLWtccypwZXJtX21vZCI7IHRoZW4KICAgICAgICBlY2hvICJEaXNjcmV0aW9uYXJ5IGFjY2VzcyBjb250cm9sIHBlcm1pc3Npb24gbW9kaWZpY2F0aW9uIGV2ZW50cyBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxzZQogICAgICAgIGVjaG8gIkVuc3VyZSBkaXNjcmV0aW9uYXJ5IGFjY2VzcyBjb250cm9sIHBlcm1pc3Npb24gbW9kaWZpY2F0aW9uIGV2ZW50cyBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.10",
+        "description": "Ensure unsuccessful unauthorized file access attempts are collected",
+        "command": "grep access /etc/audit/rules.d/*.rules; auditctl -l | grep access",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccypjcmVhdFxzKi1TXHMqb3BlblxzKi1TXHMqb3BlbmF0XHMqLVNccyp0cnVuY2F0ZVxzKi1TXHMqZnRydW5jYXRlXHMqLUZccypleGl0PS1FQUNDRVNccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyota1xzKmFjY2VzcyIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqY3JlYXRccyotU1xzKm9wZW5ccyotU1xzKm9wZW5hdFxzKi1TXHMqdHJ1bmNhdGVccyotU1xzKmZ0cnVuY2F0ZVxzKi1GXHMqZXhpdD0tRVBFUk1ccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyota1xzKmFjY2VzcyIgLWUgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWI2NFxzKi1TXHMqY3JlYXRccyotU1xzKm9wZW5ccyotU1xzKm9wZW5hdFxzKi1TXHMqdHJ1bmNhdGVccyotU1xzKmZ0cnVuY2F0ZVxzKi1GXHMqZXhpdD0tRUFDQ0VTXHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLWtccyphY2Nlc3MiIC1lICJcLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iNjRccyotU1xzKmNyZWF0XHMqLVNccypvcGVuXHMqLVNccypvcGVuYXRccyotU1xzKnRydW5jYXRlXHMqLVNccypmdHJ1bmNhdGVccyotRlxzKmV4aXQ9LUVQRVJNXHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLWtccyphY2Nlc3MiO3RoZW4KICAgICAgICBlY2hvICJVbnN1Y2Nlc3NmdWwgdW5hdXRob3JpemVkIGZpbGUgYWNjZXNzIGF0dGVtcHRzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIHVuc3VjY2Vzc2Z1bCB1bmF1dGhvcml6ZWQgZmlsZSBhY2Nlc3MgYXR0ZW1wdHMgYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDEKICAgIGZpCmVsc2UKICAgIGlmIGVjaG8gIiRjbWQyIiB8IGdyZXAgLWUgICJcLWFccyphbHdheXMsZXhpdFxzKi1GXHMqYXJjaD1iMzJccyotU1xzKmNyZWF0XHMqLVNccypvcGVuXHMqLVNccypvcGVuYXRccyotU1xzKnRydW5jYXRlXHMqLVNccypmdHJ1bmNhdGVccyotRlxzKmV4aXQ9LUVBQ0NFU1xzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqYWNjZXNzIiAtZSAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccypjcmVhdFxzKi1TXHMqb3BlblxzKi1TXHMqb3BlbmF0XHMqLVNccyp0cnVuY2F0ZVxzKi1TXHMqZnRydW5jYXRlXHMqLUZccypleGl0PS1FUEVSTVxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqYWNjZXNzIjsgdGhlbgogICAgICAgIGVjaG8gIlVuc3VjY2Vzc2Z1bCB1bmF1dGhvcml6ZWQgZmlsZSBhY2Nlc3MgYXR0ZW1wdHMgYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJFbnN1cmUgdW5zdWNjZXNzZnVsIHVuYXV0aG9yaXplZCBmaWxlIGFjY2VzcyBhdHRlbXB0cyBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.12",
+        "description": "Ensure successful file system mounts are collected",
+        "command": "grep mounts /etc/audit/rules.d/*.rules; auditctl -l | grep mounts",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjY0XHMqLVNccyptb3VudFxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqbW91bnRzIiAtZSAgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqbW91bnRccyotRlxzKmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyota1xzKm1vdW50cyI7dGhlbgogICAgICAgIGVjaG8gIlN1Y2Nlc3NmdWwgZmlsZSBzeXN0ZW0gbW91bnRzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIHN1Y2Nlc3NmdWwgZmlsZSBzeXN0ZW0gbW91bnRzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQplbHNlCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccyptb3VudFxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqbW91bnRzIjsgdGhlbgogICAgICAgIGVjaG8gIlN1Y2Nlc3NmdWwgZmlsZSBzeXN0ZW0gbW91bnRzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIHN1Y2Nlc3NmdWwgZmlsZSBzeXN0ZW0gbW91bnRzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.13",
+        "description": "Ensure file deletion events by users are collected",
+        "command": "grep delete /etc/audit/rules.d/*.rules; auditctl -l | grep delete",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjMyXHMqLVNccyp1bmxpbmtccyotU1xzKnVubGlua2F0XHMqLVNccypyZW5hbWVccyotU1xzKnJlbmFtZWF0XHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLWtccypkZWxldGUiIC1lICAiXC1hXHMqYWx3YXlzLGV4aXRccyotRlxzKmFyY2g9YjY0XHMqLVNccyp1bmxpbmtccyotU1xzKnVubGlua2F0XHMqLVNccypyZW5hbWVccyotU1xzKnJlbmFtZWF0XHMqLUZccyphdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLWtccypkZWxldGUiO3RoZW4KICAgICAgICBlY2hvICJGaWxlIGRlbGV0aW9uIGV2ZW50cyBieSB1c2VycyBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxzZQogICAgICAgIGVjaG8gIkVuc3VyZSBmaWxlIGRlbGV0aW9uIGV2ZW50cyBieSB1c2VycyBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZWxzZQogICAgaWYgZWNobyAiJGNtZDIiIHwgZ3JlcCAtZSAgIlwtYVxzKmFsd2F5cyxleGl0XHMqLUZccyphcmNoPWIzMlxzKi1TXHMqdW5saW5rXHMqLVNccyp1bmxpbmthdFxzKi1TXHMqcmVuYW1lXHMqLVNccypyZW5hbWVhdFxzKi1GXHMqYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1rXHMqZGVsZXRlIjsgdGhlbgogICAgICAgIGVjaG8gIkZpbGUgZGVsZXRpb24gZXZlbnRzIGJ5IHVzZXJzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGZpbGUgZGVsZXRpb24gZXZlbnRzIGJ5IHVzZXJzIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.15",
+        "description": "Ensure system administrator command executions (sudo) are collected",
+        "command": "grep actions /etc/audit/rules.d/*.rules; auditctl -l | grep actions",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiXC1hXHMqZXhpdCxhbHdheXNccyotRlxzKmFyY2g9YjMyXHMqLUNccypldWlkIT11aWRccyotRlxzKmV1aWQ9MFxzKi1GYXVpZD49MTAwMFxzKi1GXHMqYXVpZCE9NDI5NDk2NzI5NVxzKi1TXHMqZXhlY3ZlXHMqLWtccyphY3Rpb25zIiAtZSAgIlwtYVxzKmV4aXQsYWx3YXlzXHMqLUZccyphcmNoPWI2NFxzKi1DXHMqZXVpZCE9dWlkXHMqLUZccypldWlkPTBccyotRmF1aWQ+PTEwMDBccyotRlxzKmF1aWQhPTQyOTQ5NjcyOTVccyotU1xzKmV4ZWN2ZVxzKi1rXHMqYWN0aW9ucyI7IHRoZW4KICAgICAgICBlY2hvICJTeXN0ZW0gYWRtaW5pc3RyYXRvciBjb21tYW5kIGV4ZWN1dGlvbnMgKHN1ZG8pIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIHN5c3RlbSBhZG1pbmlzdHJhdG9yIGNvbW1hbmQgZXhlY3V0aW9ucyAoc3VkbykgYXJlIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDEKICAgIGZpCmVsc2UKICAgIGlmIGVjaG8gIiRjbWQyIiB8IGdyZXAgLWUgICJcLWFccypleGl0LGFsd2F5c1xzKi1GXHMqYXJjaD1iMzJccyotQ1xzKmV1aWQhPXVpZFxzKi1GXHMqZXVpZD0wXHMqLUZhdWlkPj0xMDAwXHMqLUZccyphdWlkIT00Mjk0OTY3Mjk1XHMqLVNccypleGVjdmVccyota1xzKmFjdGlvbnMiOyB0aGVuCiAgICAgICAgZWNobyAiU3lzdGVtIGFkbWluaXN0cmF0b3IgY29tbWFuZCBleGVjdXRpb25zIChzdWRvKSBhcmUgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMAogICAgZWxzZQogICAgICAgIGVjaG8gIkVuc3VyZSBzeXN0ZW0gYWRtaW5pc3RyYXRvciBjb21tYW5kIGV4ZWN1dGlvbnMgKHN1ZG8pIGFyZSBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAxCiAgICBmaQpmaQ==",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.1.16",
+        "description": "Ensure kernel module loading and unloading is collected",
+        "command": "grep modules /etc/audit/rules.d/*.rules; auditctl -l | grep modules",
+        "script": "Y21kPSQodW5hbWUgLW0pCmNtZDI9JChzdWRvIGJhc2ggLWMgImNhdCAvZXRjL2F1ZGl0L3J1bGVzLmQvKi5ydWxlcyAyPiYxIikKCmVjaG8gIiRjbWQiCmVjaG8gIiRjbWQyIgplY2hvIAplY2hvCgppZiAgZWNobyAiJGNtZCIgfCBncmVwIC1xICJ4ODZfNjQiOyB0aGVuCiAgICBpZiBlY2hvICIkY21kMiIgfCBncmVwIC1lICAiLXcgL3NiaW4vaW5zbW9kIC1wIHggLWsgbW9kdWxlcyIgLWUgIi13IC9zYmluL3JtbW9kIC1wIHggLWsgbW9kdWxlcyIgLWUgIi13IC9zYmluL21vZHByb2JlIC1wIHggLWsgbW9kdWxlcyIgLWUgIi1hIGFsd2F5cyxleGl0IC1GIGFyY2g9YjY0IC1TIGluaXRfbW9kdWxlIC1TIGRlbGV0ZV9tb2R1bGUgLWsgbW9kdWxlcyI7IHRoZW4KICAgICAgICBlY2hvICJLZXJuZWwgbW9kdWxlIGxvYWRpbmcgYW5kIHVubG9hZGluZyBpcyBjb2xsZWN0ZWQiCiAgICAgICAgZXhpdCAwCiAgICBlbHNlCiAgICAgICAgZWNobyAiRW5zdXJlIGtlcm5lbCBtb2R1bGUgbG9hZGluZyBhbmQgdW5sb2FkaW5nIGlzIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDEKICAgIGZpCmVsc2UKICAgIGlmIGVjaG8gIiRjbWQyIiB8IGdyZXAgLWUgICItdyAvc2Jpbi9pbnNtb2QgLXAgeCAtayBtb2R1bGVzIiAtZSAiLXcgL3NiaW4vcm1tb2QgLXAgeCAtayBtb2R1bGVzIiAtZSAiLXcgL3NiaW4vbW9kcHJvYmUgLXAgeCAtayBtb2R1bGVzIiAtZSAiLWEgYWx3YXlzLGV4aXQgLUYgYXJjaD1iMzIgLVMgaW5pdF9tb2R1bGUgLVMgZGVsZXRlX21vZHVsZSAtayBtb2R1bGVzIjsgdGhlbgogICAgICAgIGVjaG8gIktlcm5lbCBtb2R1bGUgbG9hZGluZyBhbmQgdW5sb2FkaW5nIGlzIGNvbGxlY3RlZCIKICAgICAgICBleGl0IDAKICAgIGVsc2UKICAgICAgICBlY2hvICJFbnN1cmUga2VybmVsIG1vZHVsZSBsb2FkaW5nIGFuZCB1bmxvYWRpbmcgaXMgY29sbGVjdGVkIgogICAgICAgIGV4aXQgMQogICAgZmkKZmk=",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.1.1",
+        "description": "Ensure rsyslog is installed",
+        "command": "dpkg -s rsyslog",
+        "script": "b3V0cHV0PSQoZHBrZyAtcyByc3lzbG9nIDI+JjEpCmVjaG8gIiRvdXRwdXQiCmlmIGVjaG8gIiRvdXRwdXQiIHwgZ3JlcCAtcSAiaW5zdGFsbCBvayBpbnN0YWxsZWQiOyB0aGVuCiAgICBlY2hvICJSc3lzbG9nIGlzIGluc3RhbGxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgdGhlIHBhY2thZ2UgJ3JzeXNsb2cnIGlzIGluc3RhbGxlZC4iCiAgICBleGl0IDEKZmkK",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.1.2",
+        "description": "Ensure rsyslog Service is enabled",
+        "command": "systemctl is-enabled rsyslog",
+        "script": "b3V0cHV0MT0kKHN5c3RlbWN0bCBpcy1lbmFibGVkIHJzeXNsb2cgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiZW5hYmxlZCI7IHRoZW4KICAgIGVjaG8gInJzeXNsb2cgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcnN5c2xvZyBzZXJ2aWNlIGlzIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.1.4",
+        "description": "Ensure rsyslog default file permissions configured",
+        "command": "grep ^\\s*\\$FileCreateMode /etc/rsyslog.conf /etc/rsyslog.d/*.conf",
+        "script": "b3V0cHV0MT0kKGdyZXAgXlxzKlwkRmlsZUNyZWF0ZU1vZGUgL2V0Yy9yc3lzbG9nLmNvbmYgL2V0Yy9yc3lzbG9nLmQvKi5jb25mKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICIkRmlsZUNyZWF0ZU1vZGUgMDY0MCI7IHRoZW4KICAgIGVjaG8gInJzeXNsb2cgZGVmYXVsdCBmaWxlIHBlcm1pc3Npb25zIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHJzeXNsb2cgZGVmYXVsdCBmaWxlIHBlcm1pc3Npb25zIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.2.1",
+        "description": "Ensure journald is configured to send logs to rsyslog",
+        "command": "grep -e ForwardToSyslog /etc/systemd/journald.conf",
+        "script": "b3V0cHV0MT0kKGdyZXAgLWUgRm9yd2FyZFRvU3lzbG9nIC9ldGMvc3lzdGVtZC9qb3VybmFsZC5jb25mKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJGb3J3YXJkVG9TeXNsb2c9eWVzIjsgdGhlbgogICAgZWNobyAiam91cm5hbGQgaXMgY29uZmlndXJlZCB0byBzZW5kIGxvZ3MgdG8gcnN5c2xvZyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgam91cm5hbGQgaXMgY29uZmlndXJlZCB0byBzZW5kIGxvZ3MgdG8gcnN5c2xvZyIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.2.2",
+        "description": "Ensure journald is configured to compress large log files",
+        "command": "grep -e Compress /etc/systemd/journald.conf",
+        "script": "b3V0cHV0MT0kKGdyZXAgLWUgQ29tcHJlc3MgL2V0Yy9zeXN0ZW1kL2pvdXJuYWxkLmNvbmYpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkNvbXByZXNzPXllcyI7IHRoZW4KICAgIGVjaG8gImpvdXJuYWxkIGlzIGNvbmZpZ3VyZWQgdG8gY29tcHJlc3MgbGFyZ2UgbG9nIGZpbGVzIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBqb3VybmFsZCBpcyBjb25maWd1cmVkIHRvIGNvbXByZXNzIGxhcmdlIGxvZyBmaWxlcyIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.2.3",
+        "description": "Ensure journald is configured to write logfiles to persistent disk",
+        "command": "grep -e Storage /etc/systemd/journald.conf",
+        "script": "b3V0cHV0MT0kKGdyZXAgLWUgU3RvcmFnZSAvZXRjL3N5c3RlbWQvam91cm5hbGQuY29uZikKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiU3RvcmFnZT1wZXJzaXN0ZW50IjsgdGhlbgogICAgZWNobyAiam91cm5hbGQgaXMgY29uZmlndXJlZCB0byB3cml0ZSBsb2dmaWxlcyB0byBwZXJzaXN0ZW50IGRpc2siCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGpvdXJuYWxkIGlzIGNvbmZpZ3VyZWQgdG8gd3JpdGUgbG9nZmlsZXMgdG8gcGVyc2lzdGVudCBkaXNrIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.2.3",
+        "description": "Ensure permissions on all logfiles are configured",
+        "command": "sudo find /var/log -type f -ls",
+        "script": "CmZpbmRfb3V0cHV0PSQoc3VkbyBmaW5kIC92YXIvbG9nIC10eXBlIGYgLWxzKQpoYXNfaW5jb3JyZWN0X3Blcm1pc3Npb25zPWZhbHNlCgp3aGlsZSBJRlM9IHJlYWQgLXIgbGluZTsgZG8KICBwZXJtaXNzaW9ucz0kKGVjaG8gIiRsaW5lIiB8IGF3ayAne3ByaW50ICQzfScpCgogIGlmICEgZWNobyAiJHBlcm1pc3Npb25zIiB8IGdyZXAgLXEgIl4tcnctci0tLS0tIiAmJiAhIGVjaG8gIiRwZXJtaXNzaW9ucyIgfCBncmVwIC1xICJeLXJ3LS0tLS0tLSI7IHRoZW4KICAgIGVjaG8gIkZpbGUgZG9lcyBub3QgaGF2ZSB0aGUgcmlnaHQgcGVybWlzc2lvbnM6ICRsaW5lIgogICAgaGFzX2luY29ycmVjdF9wZXJtaXNzaW9ucz10cnVlCiAgZmkKZG9uZSA8PDwgIiRmaW5kX291dHB1dCIKCmlmICRoYXNfaW5jb3JyZWN0X3Blcm1pc3Npb25zOyB0aGVuCiAgZWNobyAiU29tZSBmaWxlcyBoYXZlIGluY29ycmVjdCBwZXJtaXNzaW9ucy4iCiAgZXhpdCAxCmVsc2UKICBlY2hvICJBbGwgZmlsZXMgaGF2ZSB0aGUgcmlnaHQgcGVybWlzc2lvbnMuIgogIGV4aXQgMApmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "4.4",
+        "description": "Ensure logrotate assigns appropriate permissions",
+        "command": "grep -E \"^\\s*create\\s+\\S+\" /etc/logrotate.conf | grep -E -v \"\\s(0)?[0-6][04]0\\s\"",
+        "script": "b3V0cHV0MT0kKGdyZXAgLUUgIl5ccypjcmVhdGVccytcUysiIC9ldGMvbG9ncm90YXRlLmNvbmYgfCBncmVwIC1FIC12ICJccygwKT9bMC02XVswNF0wXHMiKQoKZWNobyAiJG91dHB1dDEiCgppZiBbWyAteiAiJG91dHB1dDEiIF1dOyB0aGVuCiAgICBlY2hvICJsb2dyb3RhdGUgYXNzaWducyBhcHByb3ByaWF0ZSBwZXJtaXNzaW9ucyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgbG9ncm90YXRlIGFzc2lnbnMgYXBwcm9wcmlhdGUgcGVybWlzc2lvbnMiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.1",
+        "description": "Ensure cron daemon is enabled and running",
+        "command": "systemctl is-enabled cron",
+        "script": "b3V0cHV0MT0kKHN5c3RlbWN0bCBpcy1lbmFibGVkIGNyb24gMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiZW5hYmxlZCI7IHRoZW4KICAgIGVjaG8gImNyb24gaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgY3JvbiBzZXJ2aWNlIGlzIGVuYWJsZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.2",
+        "description": "Ensure permissions on /etc/crontab are configured",
+        "command": "stat /etc/crontab",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9udGFiKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA2MDAvLXJ3LS0tLS0tLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2Nyb250YWIgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvY3JvbnRhYiBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.3",
+        "description": "Ensure permissions on /etc/cron.hourly are configured",
+        "command": "stat /etc/cron.hourly/",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9uLmhvdXJseS8pCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkFjY2VzczpccyooMDcwMC9kcnd4LS0tLS0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvY3Jvbi5ob3VybHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvY3Jvbi5ob3VybHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.4",
+        "description": "Ensure permissions on /etc/cron.daily are configured",
+        "command": "stat /etc/cron.daily/",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9uLmRhaWx5LykKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNzAwL2Ryd3gtLS0tLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gL2V0Yy9jcm9uLmRhaWx5IGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBwZXJtaXNzaW9ucyBvbiAvZXRjL2Nyb24uZGFpbHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.5",
+        "description": "Ensure permissions on /etc/cron.weekly are configured",
+        "command": "stat /etc/cron.weekly/",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9uLndlZWtseS8pCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkFjY2VzczpccyooMDcwMC9kcnd4LS0tLS0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvY3Jvbi53ZWVrbHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvY3Jvbi53ZWVrbHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.6",
+        "description": "Ensure permissions on /etc/cron.monthly are configured",
+        "command": "stat /etc/cron.monthly/",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9uLm1vbnRobHkvKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA3MDAvZHJ3eC0tLS0tLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2Nyb24ubW9udGhseSBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9jcm9uLm1vbnRobHkgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.1.7",
+        "description": "Ensure permissions on /etc/cron.d are configured",
+        "command": "stat /etc/cron.d/",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9jcm9uLmQvKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA3MDAvZHJ3eC0tLS0tLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2Nyb24uZCBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9jcm9uLmQgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.1",
+        "description": "Ensure permissions on /etc/ssh/sshd_config are configured",
+        "command": "sudo stat /etc/ssh/sshd_config",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9zc2gvc3NoZF9jb25maWcgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNjAwLy1ydy0tLS0tLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gL2V0Yy9zc2gvc3NoZF9jb25maWcgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvc3NoL3NzaGRfY29uZmlnIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.2",
+        "description": "Ensure permissions on SSH private host key files are configured",
+        "command": "find /etc/ssh -xdev -type f -name 'ssh_host_*_key' | xargs stat",
+        "script": "b3V0cHV0MT0kKGZpbmQgL2V0Yy9zc2ggLXhkZXYgLXR5cGUgZiAtbmFtZSAnc3NoX2hvc3RfKl9rZXknIHwgeGFyZ3Mgc3RhdCAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwICJBY2Nlc3M6XHMqKCIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA2MDAvLXJ3LS0tLS0tLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiBTU0ggcHJpdmF0ZSBob3N0IGtleSBmaWxlcyBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gU1NIIHByaXZhdGUgaG9zdCBrZXkgZmlsZXMgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.3",
+        "description": "Ensure permissions on SSH public host key files are configured",
+        "command": "find /etc/ssh -xdev -type f -name 'ssh_host_*_key.pub' | xargs stat",
+        "script": "b3V0cHV0MT0kKGZpbmQgL2V0Yy9zc2ggLXhkZXYgLXR5cGUgZiAtbmFtZSAnc3NoX2hvc3RfKl9rZXkucHViJyB8IHhhcmdzIHN0YXQgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAiQWNjZXNzOlxzKigiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNjQ0Ly1ydy1yLS1yLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gU1NIIHB1YmxpYyBob3N0IGtleSBmaWxlcyBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gU1NIIHB1YmxpYyBob3N0IGtleSBmaWxlcyBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.4",
+        "description": "Ensure SSH LogLevel is appropriate",
+        "command": "sudo sshd -T | grep loglevel",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgbG9nbGV2ZWwgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAtRSAibG9nbGV2ZWxccypJTkZPfGxvZ2xldmVsXHMqVkVSQk9TRSI7IHRoZW4KICAgIGVjaG8gIlNTSCBMb2dMZXZlbCBpcyBhcHByb3ByaWF0ZSIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIExvZ0xldmVsIGlzIGFwcHJvcHJpYXRlIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.5",
+        "description": "Ensure SSH X11 forwarding is disabled",
+        "command": "sudo sshd -T | grep x11forwarding",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgeDExZm9yd2FyZGluZyAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJ4MTFmb3J3YXJkaW5nXHMqbm8iOyB0aGVuCiAgICBlY2hvICJTU0ggWDExIGZvcndhcmRpbmcgaXMgZGlzYWJsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIFNTSCBYMTEgZm9yd2FyZGluZyBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.6",
+        "description": "Ensure SSH MaxAuthTries is set to 4 or less",
+        "command": "sudo sshd -T | grep maxauthtries",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgbWF4YXV0aHRyaWVzIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIk1heEF1dGhUcmllc1xzKjQiOyB0aGVuCiAgICBlY2hvICJTU0ggTWF4QXV0aFRyaWVzIGlzIHNldCB0byA0IG9yIGxlc3MiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIFNTSCBNYXhBdXRoVHJpZXMgaXMgc2V0IHRvIDQgb3IgbGVzcyIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.7",
+        "description": "Ensure SSH IgnoreRhosts is enabled",
+        "command": "sudo sshd -T | grep ignorerhosts",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgaWdub3Jlcmhvc3RzIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgImlnbm9yZXJob3N0c1xzKnllcyI7IHRoZW4KICAgIGVjaG8gIlNTSCBJZ25vcmVSaG9zdHMgaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIElnbm9yZVJob3N0cyBpcyBlbmFibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.8",
+        "description": "Ensure SSH HostbasedAuthentication is disabled",
+        "command": "sudo sshd -T | grep hostbasedauthentication",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgaG9zdGJhc2VkYXV0aGVudGljYXRpb24gMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiaG9zdGJhc2VkYXV0aGVudGljYXRpb25ccypubyI7IHRoZW4KICAgIGVjaG8gIlNTSCBIb3N0YmFzZWRBdXRoZW50aWNhdGlvbiBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIEhvc3RiYXNlZEF1dGhlbnRpY2F0aW9uIGlzIGRpc2FibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.9",
+        "description": "Ensure SSH root login is disabled",
+        "command": "sudo sshd -T | grep permitrootlogin",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgcGVybWl0cm9vdGxvZ2luIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgInBlcm1pdHJvb3Rsb2dpblxzKm5vIjsgdGhlbgogICAgZWNobyAiU1NIIHJvb3QgbG9naW4gaXMgZGlzYWJsZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIFNTSCByb290IGxvZ2luIGlzIGRpc2FibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.10",
+        "description": "Ensure SSH PermitEmptyPasswords is disabled",
+        "command": "sudo sshd -T | grep permitemptypasswords",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgcGVybWl0ZW1wdHlwYXNzd29yZHMgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAicGVybWl0ZW1wdHlwYXNzd29yZHNccypubyI7IHRoZW4KICAgIGVjaG8gIlNTSCBQZXJtaXRFbXB0eVBhc3N3b3JkcyBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIFBlcm1pdEVtcHR5UGFzc3dvcmRzIGlzIGRpc2FibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.11",
+        "description": "Ensure SSH PermitUserEnvironment is disabled",
+        "command": "sudo sshd -T | grep permituserenvironment",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgcGVybWl0dXNlcmVudmlyb25tZW50IDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgInBlcm1pdHVzZXJlbnZpcm9ubWVudFxzKm5vIjsgdGhlbgogICAgZWNobyAiU1NIIFBlcm1pdFVzZXJFbnZpcm9ubWVudCBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIFBlcm1pdFVzZXJFbnZpcm9ubWVudCBpcyBkaXNhYmxlZCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.12",
+        "description": "Ensure only strong Ciphers are used",
+        "command": "sudo sshd -T | grep ciphers",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgY2lwaGVycyAyPiYxKQplY2hvIC1lICJWZXJpZnkgdGhlIGZvbGxvd2luZyBPdXRwdXQgZG9lcyBub3QgY29udGFpbiBhbnkgd2VhayBjaXBoZXJzOiAKIgplY2hvICIkb3V0cHV0MSIKZWNobyAtZSAiCmV4YW1wbGVzIGZvciB3ZWFrIGNpcGhlcnM6CjNkZXMtY2JjCmFlczEyOC1jYmMKYWVzMTkyLWNiYwphZXMyNTYtY2JjIgoKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.13",
+        "description": "Ensure only strong MAC algorithms are used",
+        "command": "sudo sshd -T | grep -i \"MACs\"",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgLWkgIk1BQ3MiIDI+JjEpCmVjaG8gLWUgIlZlcmlmeSB0aGUgb3V0cHV0IGRvZXMgbm90IGNvbnRhaW4gYW55IHdlYWsgTUFDIGFsZ29yaXRobXM6IAoiCmVjaG8gIiRvdXRwdXQxIgplY2hvIC1lICIKZXhhbXBsZXMgZm9yIHdlYWsgTUFDIGFsZ29yaXRobXM6CmhtYWMtbWQ1CmhtYWMtbWQ1LTk2CmhtYWMtcmlwZW1kMTYwCmhtYWMtc2hhMQpobWFjLXNoYTEtOTYKdW1hYy02NEBvcGVuc3NoLmNvbQp1bWFjLTEyOEBvcGVuc3NoLmNvbQpobWFjLW1kNS1ldG1Ab3BlbnNzaC5jb20KaG1hYy1tZDUtOTYtZXRtQG9wZW5zc2guY29tCmhtYWMtcmlwZW1kMTYwLWV0bUBvcGVuc3NoLmNvbQpobWFjLXNoYTEtZXRtQG9wZW5zc2guY29tCmhtYWMtc2hhMS05Ni1ldG1Ab3BlbnNzaC5jb20KdW1hYy02NC1ldG1Ab3BlbnNzaC5jb20KdW1hYy0xMjgtZXRtQG9wZW5zc2guY29tIgoKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.14",
+        "description": "Ensure only strong Key Exchange algorithms are used",
+        "command": "sudo sshd -T | grep kexalgorithms",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAga2V4YWxnb3JpdGhtcyAyPiYxKQplY2hvIC1lICJWZXJpZnkgdGhlIG91dHB1dCBkb2VzIG5vdCBjb250YWluIGFueSB3ZWFrIEtleSBFeGNoYW5nZSBBbGdvcml0aG1zOiAKIgplY2hvICIkb3V0cHV0MSIKZWNobyAtZSAiCmV4YW1wbGVzIGZvciB3ZWFrIEtleSBFeGNoYW5nZSBBbGdvcml0aG1zOgpkaWZmaWUtaGVsbG1hbi1ncm91cDEtc2hhMQpkaWZmaWUtaGVsbG1hbi1ncm91cDE0LXNoYTEKZGlmZmllLWhlbGxtYW4tZ3JvdXAtZXhjaGFuZ2Utc2hhMSIKCmV4aXQgMTA=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.15",
+        "description": "Ensure SSH Idle Timeout Interval is configured",
+        "command": "sudo sshd -T | grep clientaliveinterval",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgY2xpZW50YWxpdmVpbnRlcnZhbCAyPiYxKQpvdXRwdXQyPSQoc3VkbyBzc2hkIC1UIHwgZ3JlcCBjbGllbnRhbGl2ZWNvdW50bWF4IDI+JjEpCgplY2hvICIkb3V0cHV0MSIKZWNobyAiJG91dHB1dDIiCgpudW1iZXIxPSQoZWNobyAiJG91dHB1dDEifCBhd2sgJ3twcmludCAkMn0nKQpudW1iZXIyPSQoZWNobyAiJG91dHB1dDIifCBhd2sgJ3twcmludCAkMn0nKQoKaWYgW1sgJG51bWJlcjEgLWx0IDMwMSAmJiAkbnVtYmVyMiAtbHQgNCBdXTsgdGhlbgogICAgZWNobyAiU1NIIElkbGUgVGltZW91dCBJbnRlcnZhbCBpcyBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBTU0ggSWRsZSBUaW1lb3V0IEludGVydmFsIGlzIGNvbmZpZ3VyZWQiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.16",
+        "description": "Ensure SSH LoginGraceTime is set to one minute or less",
+        "command": "sudo sshd -T | grep logingracetime",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgbG9naW5ncmFjZXRpbWUgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKbnVtYmVyMT0kKGVjaG8gIiRvdXRwdXQxInwgYXdrICd7cHJpbnQgJDJ9JykKCmlmIFtbICRudW1iZXIxIC1sdCA2MCBdXTsgdGhlbgogICAgZWNobyAiU1NIIExvZ2luR3JhY2VUaW1lIGlzIHNldCB0byBvbmUgbWludXRlIG9yIGxlc3MiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIFNTSCBMb2dpbkdyYWNlVGltZSBpcyBzZXQgdG8gb25lIG1pbnV0ZSBvciBsZXNzIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.17",
+        "description": "Ensure SSH access is limited",
+        "command": "sudo sshd -T | grep allowusers; sudo sshd -T | grep allowgroups; sudo sshd -T | grep denyusers; sudo sshd -T | grep denygroups",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgYWxsb3d1c2VycyAyPiYxKQpvdXRwdXQyPSQoc3VkbyBzc2hkIC1UIHwgZ3JlcCBhbGxvd2dyb3VwcyAyPiYxKQpvdXRwdXQzPSQoc3VkbyBzc2hkIC1UIHwgZ3JlcCBkZW55dXNlcnMgMj4mMSkKb3V0cHV0ND0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgZGVueWdyb3VwcyAyPiYxKQoKZWNobyAiJG91dHB1dDEiCmVjaG8gIiRvdXRwdXQyIgplY2hvICIkb3V0cHV0MyIKZWNobyAiJG91dHB1dDQiCgplY2hvICJFbnN1cmUgdGhlIFNTSCBhY2Nlc3MgaXMgbGltaXRlZC4gQWRqdXN0IHRvIHlvdXIgcHJlZmVyZW5jZSIKCmV4aXQgMTA=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.19",
+        "description": "Ensure SSH PAM is enabled",
+        "command": "sudo sshd -T | grep -i usepam",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgLWkgdXNlcGFtIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgInVzZXBhbVxzKnllcyI7IHRoZW4KICAgIGVjaG8gIlNTSCBQQU0gaXMgZW5hYmxlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgU1NIIFBBTSBpcyBlbmFibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.20",
+        "description": "Ensure SSH AllowTcpForwarding is disabled",
+        "command": "sudo sshd -T | grep -i allowtcpforwarding",
+        "script": "b3V0cHV0MT0kKHN1ZG8gc3VkbyBzc2hkIC1UIHwgZ3JlcCAtaSBhbGxvd3RjcGZvcndhcmRpbmcgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiYWxsb3d0Y3Bmb3J3YXJkaW5nXHMqbm8iOyB0aGVuCiAgICBlY2hvICJTU0ggQWxsb3dUY3BGb3J3YXJkaW5nIGlzIGRpc2FibGVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBTU0ggQWxsb3dUY3BGb3J3YXJkaW5nIGlzIGRpc2FibGVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            2,
+            2
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.21",
+        "description": "Ensure SSH MaxStartups is configured",
+        "command": "sudo sshd -T | grep -i maxstartups",
+        "script": "c3VkbyBzc2hkIC1UID4gL2Rldi9udWxsIDI+JjEKaWYgW1sgJD8gLW5lIDAgXV07IHRoZW4KICAgIGVjaG8gIkVycm9yOiBQZXJtaXNzaW9uIGRlbmllZCIKICAgIGV4aXQgMQpmaQoKIyBSdW4gdGhlIGNvbW1hbmQgYW5kIGV4dHJhY3QgdGhlIE1heFN0YXJ0dXBzIHZhbHVlCm1heF9zdGFydHVwcz0kKHN1ZG8gc3NoZCAtVCB8IGdyZXAgLWkgbWF4c3RhcnR1cHMgfCBhd2sgJ3twcmludCAkMn0nKQoKIyBTZXQgdGhlIGRlc2lyZWQgdmFsdWUgdG8gY29tcGFyZSBhZ2FpbnN0CmRlc2lyZWRfdmFsdWU9IjEwOjMwOjEwMCIKCiMgU3BsaXQgdGhlIGRlc2lyZWQgdmFsdWUgYW5kIE1heFN0YXJ0dXBzIHZhbHVlIGludG8gdGhyZWUgdmFyaWFibGVzCklGUz0nOicgcmVhZCAtciBtYXhfZGVzaXJlZCByYXRlX2Rlc2lyZWQgYnVyc3RfZGVzaXJlZCA8PDwgIiRkZXNpcmVkX3ZhbHVlIgpJRlM9JzonIHJlYWQgLXIgbWF4X2FjdHVhbCByYXRlX2FjdHVhbCBidXJzdF9hY3R1YWwgPDw8ICIkbWF4X3N0YXJ0dXBzIgoKIyBQZXJmb3JtIHRoZSBjb21wYXJpc29uCmlmICgoIG1heF9hY3R1YWwgPD0gbWF4X2Rlc2lyZWQgKSkgJiYgKCggcmF0ZV9hY3R1YWwgPD0gcmF0ZV9kZXNpcmVkICkpICYmICgoIGJ1cnN0X2FjdHVhbCA8PSBidXJzdF9kZXNpcmVkICkpOyB0aGVuCiAgICBlY2hvICJTU0ggTWF4U3RhcnR1cHMgaXMgY29uZmlndXJlZCAkZGVzaXJlZF92YWx1ZSBvciBtb3JlIHJlc3RyaWN0aXZlIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBTU0ggTWF4U3RhcnR1cHMgaXMgY29uZmlndXJlZCAkZGVzaXJlZF92YWx1ZSBvciBtb3JlIHJlc3RyaWN0aXZlIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.2.22",
+        "description": "Ensure SSH MaxSessions is limited",
+        "command": "sudo sshd -T | grep -i maxsessions",
+        "script": "c3VkbyBzc2hkIC1UID4gL2Rldi9udWxsIDI+JjEKaWYgW1sgJD8gLW5lIDAgXV07IHRoZW4KICAgIGVjaG8gIkVycm9yOiBQZXJtaXNzaW9uIGRlbmllZCIKICAgIGV4aXQgMQpmaQoKbWF4X3Nlc3Npb25zPSQoc3VkbyBzc2hkIC1UIHwgZ3JlcCAtaSBtYXhzZXNzaW9ucyB8IGF3ayAne3ByaW50ICQyfScpCgppZiBbWyAkbWF4X3Nlc3Npb25zIC1sZSAxMCBdXTsgdGhlbgogICAgZWNobyAiU1NIIE1heFNlc3Npb25zIGlzIDEwIG9yIGxlc3MuIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBTU0ggTWF4U2Vzc2lvbnMgaXMgbGltaXRlZCB0byAxMCBvciBsZXNzIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.3.1",
+        "description": "Ensure password creation requirements are configured",
+        "command": "sudo grep '^\\s*minlen\\s*' /etc/security/pwquality.conf; grep '^\\s*minclass\\s*' /etc/security/pwquality.conf; grep -E '^\\s*password\\s+(requisite|required)\\s+pam_pwquality\\.so\\s+(\\S+\\s+)*retry=[1-3]\\s*(\\s+\\S+\\s*)*(\\s+#.*)?$' /etc/pam.d/common-password",
+        "script": "b3V0cHV0MT0kKGdyZXAgJ15ccyptaW5sZW5ccyonIC9ldGMvc2VjdXJpdHkvcHdxdWFsaXR5LmNvbmYpCm91dHB1dDI9JChncmVwICdeXHMqbWluY2xhc3NccyonIC9ldGMvc2VjdXJpdHkvcHdxdWFsaXR5LmNvbmYpCgplY2hvICIkb3V0cHV0MSIKZWNobyAiJG91dHB1dDIiCgpudW1iZXIxPSQoZWNobyAiJG91dHB1dDEifCBhd2sgJ3twcmludCAkM30nKQpudW1iZXIyPSQoZWNobyAiJG91dHB1dDIifCBhd2sgJ3twcmludCAkM30nKQoKaWYgW1sgJG51bWJlcjEgLWd0IDkgJiYgJG51bWJlcjIgLWd0IDIgXV07IHRoZW4KICAgIGVjaG8gIlBhc3N3b3JkIGNyZWF0aW9uIHJlcXVpcmVtZW50cyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGFzc3dvcmQgY3JlYXRpb24gcmVxdWlyZW1lbnRzIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.1.1",
+        "description": "Ensure password expiration is 365 days or less",
+        "command": "grep PASS_MAX_DAYS /etc/login.defs; sudo grep -E '^[^:]+:[^!*]' /etc/shadow | cut -d: -f1,5",
+        "script": "b3V0cHV0PSQoZ3JlcCAtRSAnXlBBU1NfTUFYX0RBWVNccycgL2V0Yy9sb2dpbi5kZWZzKQpwYXNzX21heF9kYXlzPSQoZWNobyAiJG91dHB1dCIgfCBhd2sgJ3twcmludCAkMn0nKQoKZWNobyAiJG91dHB1dCIKCmlmIFtbICRwYXNzX21heF9kYXlzIC1sdCAzNjUgXV07IHRoZW4KICAgIGVjaG8gIlBhc3N3b3JkIGV4cGlyYXRpb24gaXMgMzY1IGRheXMgb3IgbGVzcyIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGFzc3dvcmQgZXhwaXJhdGlvbiBpcyAzNjUgZGF5cyBvciBsZXNzIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.1.2",
+        "description": "Ensure minimum days between password changes is configured",
+        "command": "grep PASS_MIN_DAYS /etc/login.defs; sudo grep -E ^[^:]+:[^\\!*] /etc/shadow | cut -d: -f1,4",
+        "script": "b3V0cHV0PSQoZ3JlcCAtRSAnXlBBU1NfTUlOX0RBWVNccycgL2V0Yy9sb2dpbi5kZWZzKQpQQVNTX01JTl9EQVlTPSQoZWNobyAiJG91dHB1dCIgfCBhd2sgJ3twcmludCAkMn0nKQoKZWNobyAiJG91dHB1dCIKCmlmIFtbICRQQVNTX01JTl9EQVlTIC1ndCAwIF1dOyB0aGVuCiAgICBlY2hvICJQYXNzd29yZCBleHBpcmF0aW9uIGlzIDM2NSBkYXlzIG9yIGxlc3MiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBhc3N3b3JkIGV4cGlyYXRpb24gaXMgMzY1IGRheXMgb3IgbGVzcyIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.1.3",
+        "description": "Ensure password expiration warning days is 7 or more",
+        "command": "sudo grep PASS_WARN_AGE /etc/login.defs; sudo grep -E ^[^:]+:[^\\!*] /etc/shadow | cut -d: -f1,6",
+        "script": "b3V0cHV0PSQoZ3JlcCAtRSAnXlBBU1NfV0FSTl9BR0VccycgL2V0Yy9sb2dpbi5kZWZzKQpQQVNTX1dBUk5fQUdFPSQoZWNobyAiJG91dHB1dCIgfCBhd2sgJ3twcmludCAkMn0nKQoKZWNobyAiJG91dHB1dCIKCmlmIFtbICRQQVNTX1dBUk5fQUdFIC1ndCA2IF1dOyB0aGVuCiAgICBlY2hvICJQYXNzd29yZCBleHBpcmF0aW9uIHdhcm5pbmcgZGF5cyBpcyA3IG9yIG1vcmUiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBhc3N3b3JkIGV4cGlyYXRpb24gd2FybmluZyBkYXlzIGlzIDcgb3IgbW9yZSIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.1.4",
+        "description": "Ensure inactive password lock is 30 days or less",
+        "command": "useradd -D | grep INACTIVE; sudo grep -E ^[^:]+:[^\\!*] /etc/shadow | cut -d: -f1,7",
+        "script": "b3V0cHV0PSQodXNlcmFkZCAtRCB8IGdyZXAgSU5BQ1RJVkUpCmluYWN0aXZlX3ZhbHVlPSQoZWNobyAiJG91dHB1dCIgfCBhd2sgLUY9ICd7cHJpbnQgJDJ9JykKCmVjaG8gIiRvdXRwdXQiCgppZiBbWyAkaW5hY3RpdmVfdmFsdWUgLWd0IDAgJiYgJGluYWN0aXZlX3ZhbHVlIC1sdCAzMCBdXTsgdGhlbgogICAgZWNobyAiSW5hY3RpdmUgcGFzc3dvcmQgbG9jayBpcyAzMCBkYXlzIG9yIGxlc3MiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGluYWN0aXZlIHBhc3N3b3JkIGxvY2sgaXMgMzAgZGF5cyBvciBsZXNzIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.1.5",
+        "description": "Ensure all users last password change date is in the past",
+        "command": "for usr in $(sudo cut -d: -f1 /etc/shadow); do   [[ $(sudo chage --list $usr | grep '^Last password change' | cut -d: -f2) > $(date) ]] && echo \"$usr :$(sudo chage --list $usr | grep '^Last password change' | cut -d: -f2)\"; done",
+        "script": "b3V0cHV0PSQoZm9yIHVzciBpbiAkKHN1ZG8gY3V0IC1kOiAtZjEgL2V0Yy9zaGFkb3cpOyBkbyAgIFtbICQoc3VkbyBjaGFnZSAtLWxpc3QgJHVzciB8IGdyZXAgJ15MYXN0IHBhc3N3b3JkIGNoYW5nZScgfCBjdXQgLWQ6IC1mMikgPiAkKGRhdGUpIF1dICYmIGVjaG8gIiR1c3IgOiQoc3VkbyBjaGFnZSAtLWxpc3QgJHVzciB8IGdyZXAgJ15MYXN0IHBhc3N3b3JkIGNoYW5nZScgfCBjdXQgLWQ6IC1mMikiOyBkb25lKQoKZWNobyAiJG91dHB1dCIKCmlmIFtbIC16ICRvdXRwdXQgXV07IHRoZW4KICAgIGVjaG8gIkFsbCB1c2VycyBsYXN0IHBhc3N3b3JkIGNoYW5nZSBkYXRlIGlzIGluIHRoZSBwYXN0IgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBhbGwgdXNlcnMgbGFzdCBwYXNzd29yZCBjaGFuZ2UgZGF0ZSBpcyBpbiB0aGUgcGFzdCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.4.3",
+        "description": "Ensure default group for the root account is GID 0",
+        "command": "grep \"^root:\" /etc/passwd | cut -f4 -d:",
+        "script": "b3V0cHV0PSQoZ3JlcCAiXnJvb3Q6IiAvZXRjL3Bhc3N3ZCB8IGN1dCAtZjQgLWQ6KQoKZWNobyAiJG91dHB1dCIKCmlmIFtbICRvdXRwdXQgPX4gMCBdXTsgdGhlbgogICAgZWNobyAiQWxsIHVzZXJzIGxhc3QgcGFzc3dvcmQgY2hhbmdlIGRhdGUgaXMgaW4gdGhlIHBhc3QiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIGFsbCB1c2VycyBsYXN0IHBhc3N3b3JkIGNoYW5nZSBkYXRlIGlzIGluIHRoZSBwYXN0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "5.6",
+        "description": "Ensure access to the su command is restricted",
+        "command": "grep pam_wheel.so /etc/pam.d/su; grep <group_name> /etc/group",
+        "script": "Z3JvdXBfbmFtZXM9JChncmVwICJhdXRoIHJlcXVpcmVkIHBhbV93aGVlbC5zbyIgL2V0Yy9wYW0uZC9zdSB8IGF3ayAtRiJncm91cD0iICd7cHJpbnQgJDJ9JyB8IGF3ayAne3ByaW50ICQxfScpCgpmb3IgZ3JvdXBfbmFtZSBpbiAkZ3JvdXBfbmFtZXM7IGRvCiAgaWYgISBncmVwIC1FcSAiXiR7Z3JvdXBfbmFtZX06eDpbWzpkaWdpdDpdXSs6JCIgL2V0Yy9ncm91cDsgdGhlbgogICAgZWNobyAiRW5zdXJlIGFjY2VzcyB0byB0aGUgc3UgY29tbWFuZCBpcyByZXN0cmljdGVkIgogICAgZXhpdCAxIAogIGZpCmRvbmUKCmVjaG8gIkFjY2VzcyB0byB0aGUgc3UgY29tbWFuZCBpcyByZXN0cmljdGVkIgpleGl0IDA=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.2",
+        "description": "Ensure permissions on /etc/passwd are configured",
+        "command": "stat /etc/passwd",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9wYXNzd2QgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNjQ0Ly1ydy1yLS1yLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gL2V0Yy9wYXNzd2QgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvcGFzc3dkIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.3",
+        "description": "Ensure permissions on /etc/gshadow- are configured",
+        "command": "stat /etc/gshadow-",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9nc2hhZG93LSAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA2NDAvLXJ3LXItLS0tLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2dzaGFkb3ctIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBwZXJtaXNzaW9ucyBvbiAvZXRjL2dzaGFkb3ctIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.4",
+        "description": "Ensure permissions on /etc/shadow are configured",
+        "command": "stat /etc/shadow",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9zaGFkb3cgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNjQwLy1ydy1yLS0tLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gL2V0Yy9zaGFkb3cgYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvc2hhZG93IGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.5",
+        "description": "Ensure permissions on /etc/group are configured",
+        "command": "stat /etc/group",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9ncm91cCAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBlY2hvICIkb3V0cHV0MSIgfCBncmVwIC1xICJBY2Nlc3M6XHMqKDA2NDQvLXJ3LXItLXItLSlccypVaWQ6XHMqKFxzKjAvXHMqcm9vdClccypHaWQ6XHMqKFxzKjAvXHMqcm9vdCkiOyB0aGVuCiAgICBlY2hvICJQZXJtaXNzaW9ucyBvbiAvZXRjL2dyb3VwIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAwCmVsc2UKICAgIGVjaG8gIkVuc3VyZSBwZXJtaXNzaW9ucyBvbiAvZXRjL2dyb3VwIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.6",
+        "description": "Ensure permissions on /etc/passwd- are configured",
+        "command": "stat /etc/passwd-",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9wYXNzd2QtIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkFjY2VzczpccyooMDY0NC8tcnctci0tci0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvcGFzc3dkLSBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9wYXNzd2QtIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.7",
+        "description": "Ensure permissions on /etc/shadow- are configured",
+        "command": "stat /etc/shadow-",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9zaGFkb3ctIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkFjY2VzczpccyooMDY0MC8tcnctci0tLS0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvc2hhZG93LSBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9zaGFkb3ctIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.8",
+        "description": "Ensure permissions on /etc/group- are configured",
+        "command": "stat /etc/group-",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9ncm91cC0gMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgZWNobyAiJG91dHB1dDEiIHwgZ3JlcCAtcSAiQWNjZXNzOlxzKigwNjQ0Ly1ydy1yLS1yLS0pXHMqVWlkOlxzKihccyowL1xzKnJvb3QpXHMqR2lkOlxzKihccyowL1xzKnJvb3QpIjsgdGhlbgogICAgZWNobyAiUGVybWlzc2lvbnMgb24gL2V0Yy9ncm91cC0gYXJlIGNvbmZpZ3VyZWQiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIHBlcm1pc3Npb25zIG9uIC9ldGMvZ3JvdXAtIGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.9",
+        "description": "Ensure permissions on /etc/gshadow are configured",
+        "command": "stat /etc/gshadow",
+        "script": "b3V0cHV0MT0kKHN0YXQgL2V0Yy9nc2hhZG93IDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIGVjaG8gIiRvdXRwdXQxIiB8IGdyZXAgLXEgIkFjY2VzczpccyooMDY0MC8tcnctci0tLS0tKVxzKlVpZDpccyooXHMqMC9ccypyb290KVxzKkdpZDpccyooXHMqMC9ccypyb290KSI7IHRoZW4KICAgIGVjaG8gIlBlcm1pc3Npb25zIG9uIC9ldGMvZ3NoYWRvdyBhcmUgY29uZmlndXJlZCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGVybWlzc2lvbnMgb24gL2V0Yy9nc2hhZG93IGFyZSBjb25maWd1cmVkIgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.10",
+        "description": "Ensure no world writable files exist",
+        "command": "df --local -P | awk '{if (NR!=1) print $6}' | sudo xargs -I '{}' find '{}' -xdev -type f -perm -0002",
+        "script": "b3V0cHV0MT0kKGRmIC0tbG9jYWwgLVAgfCBhd2sgJ3tpZiAoTlIhPTEpIHByaW50ICQ2fScgfCBzdWRvIHhhcmdzIC1JICd7fScgZmluZCAne30nIC14ZGV2IC10eXBlIGYgLXBlcm0gLTAwMDIgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgW1sgLXogIiRvdXRwdXQxIiBdXTsgdGhlbgogICAgZWNobyAiTm8gd29ybGQgd3JpdGFibGUgZmlsZXMgZXhpc3QiCiAgICBleGl0IDAKZWxzZQogICAgZWNobyAiRW5zdXJlIG5vIHdvcmxkIHdyaXRhYmxlIGZpbGVzIGV4aXN0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.11",
+        "description": "Ensure no unowned files or directories exist",
+        "command": "df --local -P | awk {'if (NR!=1) print $6'} | sudo xargs -I '{}' find '{}' -xdev -nouser",
+        "script": "b3V0cHV0MT0kKGRmIC0tbG9jYWwgLVAgfCBhd2sgeydpZiAoTlIhPTEpIHByaW50ICQ2J30gfCBzdWRvIHhhcmdzIC1JICd7fScgZmluZCAne30nIC14ZGV2IC1ub3VzZXIgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKaWYgW1sgLXogIiRvdXRwdXQxIiBdXTsgdGhlbgogICAgZWNobyAiTm8gdW5vd25lZCBmaWxlcyBvciBkaXJlY3RvcmllcyBleGlzdCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgbm8gdW5vd25lZCBmaWxlcyBvciBkaXJlY3RvcmllcyBleGlzdCIKICAgIGV4aXQgMQpmaQ==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.12",
+        "description": "Ensure no ungrouped files or directories exist",
+        "command": "df --local -P | awk '{if (NR!=1) print $6}' | sudo xargs -I '{}' find '{}' -xdev -nogroup",
+        "script": "b3V0cHV0MT0kKGRmIC0tbG9jYWwgLVAgfCBhd2sgJ3tpZiAoTlIhPTEpIHByaW50ICQ2fScgfCBzdWRvIHhhcmdzIC1JICd7fScgZmluZCAne30nIC14ZGV2IC1ub2dyb3VwIDI+JjEpCgplY2hvICIkb3V0cHV0MSIKCmlmIFtbIC16ICIkb3V0cHV0MSIgXV07IHRoZW4KICAgIGVjaG8gIk5vIHVuZ3JvdXBlZCBmaWxlcyBvciBkaXJlY3RvcmllcyBleGlzdCIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgbm8gdW5ncm91cGVkIGZpbGVzIG9yIGRpcmVjdG9yaWVzIGV4aXN0IgogICAgZXhpdCAxCmZp",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.13",
+        "description": "Audit SUID executables",
+        "command": "df --local -P | awk '{if (NR!=1) print $6}' | sudo xargs -I '{}' find '{}' -xdev -type f -perm -4000",
+        "script": "b3V0cHV0MT0kKGRmIC0tbG9jYWwgLVAgfCBhd2sgJ3tpZiAoTlIhPTEpIHByaW50ICQ2fScgfCBzdWRvIHhhcmdzIC1JICd7fScgZmluZCAne30nIC14ZGV2IC10eXBlIGYgLXBlcm0gLTQwMDAgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKZWNobyAiTWFrZSBzdXJlIHRoZSBvdXRwdXQgZnJvbSBhYm92ZSBvbmx5IGNvbnRhaW5zIGZpbGVzIHRoYXQgc2hvdWxkIGJlIHJ1biB3aXRoIHRoZSBwZXJtaXNzaW9uIG9mIHRoZSBmaWxlIG93bmVyLCByYXRoZXIgdGhlbiB0aGUgcGVybWlzc2lvbnMgb2YgdGhlIHVzZXIgZXhlY3V0aW5nIHRoZSBmaWxlLiIKCmV4aXQgMTA=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.1.14",
+        "description": "Audit SGID executables",
+        "command": "df --local -P | awk '{if (NR!=1) print $6}' | xargs -I '{}' find '{}' -xdev -type f -perm -2000",
+        "script": "b3V0cHV0MT0kKGRmIC0tbG9jYWwgLVAgfCBhd2sgJ3tpZiAoTlIhPTEpIHByaW50ICQ2fScgfCBzdWRvIHhhcmdzIC1JICd7fScgZmluZCAne30nIC14ZGV2IC10eXBlIGYgLXBlcm0gLTIwMDAgMj4mMSkKCmVjaG8gIiRvdXRwdXQxIgoKZWNobyAiTWFrZSBzdXJlIHRoZSBvdXRwdXQgZnJvbSBhYm92ZSBvbmx5IGNvbnRhaW5zIGZpbGVzIHRoYXQgc2hvdWxkIGJlIHJ1biB3aXRoIHRoZSBwZXJtaXNzaW9uIG9mIHRoZSBncm91cCBvZiB0aGUgb3duZXIsIHJhdGhlciB0aGVuIHRoZSBwZXJtaXNzaW9ucyBvZiB0aGUgdXNlciBleGVjdXRpbmcgdGhlIGZpbGUuIgoKZXhpdCAxMA==",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    },
+    {
+        "chapter": "6.2.1",
+        "description": "Ensure password fields are not empty",
+        "command": "sudo awk -F: '($2 == \"\" ) { print $1 \" does not have a password \"}' /etc/shadow",
+        "script": "b3V0cHV0MT0kKHN1ZG8gYXdrIC1GOiAnKCQyID09ICIiKSB7IHByaW50ICQxICIgZG9lcyBub3QgaGF2ZSBhIHBhc3N3b3JkIiB9JyAvZXRjL3NoYWRvdyAyPiYxKQoKZWNobyAiJG91dHB1dDEiCgppZiBbWyAteiAiJG91dHB1dDEiIF1dOyB0aGVuCiAgICBlY2hvICJQYXNzd29yZCBmaWVsZHMgYXJlIG5vdCBlbXB0eSIKICAgIGV4aXQgMAplbHNlCiAgICBlY2hvICJFbnN1cmUgcGFzc3dvcmQgZmllbGRzIGFyZSBub3QgZW1wdHkiCiAgICBleGl0IDEKZmk=",
+        "level": [
+            1,
+            1
+        ],
+        "weight": 0
+    }
+]

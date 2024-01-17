@@ -1,0 +1,8 @@
+venv
+.env
+Clean.sh
+Start.sh
+test_main.http
+Dockerfile
+docker-compose.yml
+.idea/
