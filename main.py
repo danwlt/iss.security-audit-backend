@@ -18,7 +18,8 @@ app = FastAPI()
 origins = [
     "http://localhost:8080",
     "http://localhost:80",
-    "http://vue_frontend:8080"
+    "http://vue_frontend:8080",
+    "*"
 ]
 
 app.add_middleware(

@@ -3,7 +3,7 @@ import logging
 import math
 from app.data_models.result_models import Result
 from app.utils.auth import auth
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.params import Depends
 import jwt as jwt
 from app.controller import result_controller
@@ -83,8 +83,9 @@ async def retrieve_single_result(result_id: str, token: jwt = Depends(auth.oauth
 #####################################
 
 @router.post('/')
-async def post_results(result: Result):
+async def post_results(result: Result, request: Request):
     try:
+        result.ip = request.client.host
         results = await result_controller.insert_result(result=result)
         if results:
             return response_factory(None, "inserted result")
